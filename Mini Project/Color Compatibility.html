@@ -1,0 +1,690 @@
+<html>
+    <head>
+        <title>Color Compatibility</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Chelsea Market' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=IM Fell English' rel='stylesheet'>
+        <script>
+            $(document).ready(function(){
+                $('#color1').focus(function(){
+                    $(this).css("background-color","#e0b4a4");
+                });
+
+                $('#color1').blur(function(){
+                    $(this).css("background-color","#e4dccf");
+                });
+
+                $('#color2').focus(function(){
+                    $(this).css("background-color","#e0b4a4");
+                });
+
+                $('#color2').blur(function(){
+                    $(this).css("background-color","#e4dccf");
+                });
+
+                $('#btnmain').mouseenter(function(){
+                    $(this).css('color','#e0b4a4');
+                });
+
+                $('#btnmain').mouseleave(function(){
+                    $(this).css('color','#e4dccf');
+                });
+
+                $('#para').mouseenter(function(){
+                    $(this).css('font-weight','bold');
+                });
+
+                $('#para').mouseleave(function(){
+                    $(this).css('font-weight','400');
+                });
+            });
+
+            $(document).ready(function(){
+        $('#navi').mouseenter(function(){
+            $(this).css("border-color","#674a40");
+            $('#logo').show();
+        });
+
+        $('#navi').mouseleave(function(){
+            $(this).css("border-color","black");
+            $('#logo').hide();
+        });
+    });
+        </script>
+        <script>
+            
+            function answer()
+           {
+               selectElement1=document.querySelector('#color1');
+               output1=selectElement1.value;
+
+               selectElement2=document.querySelector('#color2');
+               output2=selectElement2.value;
+
+                if(output1=="redv1" && output2=="redv2")
+                {
+                    ans="This same-color pair often enjoys a spectacular outcome when working together. The energy, passion and adventurousness of two Reds combine to produce results above and beyond what either could have done alone. But there are also times when aspects of Red may clash. The desire to lead, to be in the spotlight, to be recognized as unique, and other Red traits can make it difficult to work together toward a common goal.The sooner Reds recognize their common traits, the easier it is to build workarounds to make sure your similarities do not clash. Create separate areas where you can both shine, find ways to share the spotlight, or take turns being out in front. It will take considerable effort, but always strive to mesh your incredible drives and passions and find ways to pull together";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="redv1" && output2=="greenv2") ||(output1=="greenv1" && output2=="redv2") )
+                {
+                    ans="The brash go-getter and the stress-free chillaxer may not have a lot in common aesthetically and can find themselves taken aback and irked by each other at times. That is okay, and may even be positive if you are committed to making it work! Greens, try not to sacrifice honesty for the sake of cohesion; positive conflict equals growth. Lean into a healthy disagreement. Try allowing yourself to be swept up by Reds ambition and vision. Reds, be aware when you are amping up your energy levels to compensate for the Greens around you. Be aware that Greens avoid conflict, and may reflexively voice agreement without true commitment, simply to keep the peace.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="redv1" && output2=="yellowv2") ||(output1=="yellowv1" && output2=="redv2"))
+                {
+                    ans="Red and Yellow personalities are both action-driven, a quality that makes them a good match. When they work together, things get done quickly. The Yellow-dominant person will likely come up with the idea and the Red will make all of the decisions and plan the attack. Without the careful eye of a Blue or Green type, the quality of work might suffer, but the results will be immediate, and both Red and Yellow personalities will be happy with them. Both are clear communicators, so misunderstandings and hurt feelings will be infrequent.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="redv1" && output2=="whitev2") ||(output1=="whitev1" && output2=="redv2"))
+                {
+                    ans="Reds and Whites express their emotions in different ways, but they are both sensitive. They can make great friends as long as they are careful with the way they communicate. Reds cannot start screaming out of nowhere. And Whites cannot act passive-aggressive and give the silent treatment. If they let their negative emotions get the best of them, then they will push each other away. However, if they treat each other with kindness and respect, they can overcome their differences in personality.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="redv1" && output2=="orangev2") ||(output1=="orangev1" && output2=="redv2"))
+                {
+                    ans="Red and Orange may be at different ends of the introvert-extrovert spectrum. It can be a lot of fun to hang out, as long as you know this about each other. Orange, if you need an advocate or ally, try reaching out to a Red. Red will gladly take the spotlight at a meeting, while Orange may feel more comfortable talking one-on-one afterwards. Red, be aware of the Oranges in the room, and ask them to speak up, or pause before speaking to give others a chance. And Orange, if you have a great idea, try blurting it out before you can second guess yourself. ";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="redv1" && output2=="beigev2") ||(output1=="beigev1" && output2=="redv2"))
+                {
+                    ans="Reds love to hear themselves talk, and Beige are excellent listeners, so their conversations could last hours. Both of these have a great sense of humor. They will make each other laugh and form memories that will last a lifetime. As long as they accept their differences and agree to disagree at times, Reds and Beiges will remain great friends.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="redv1" && output2=="pinkv2") ||(output1=="pinkv1" && output2=="redv2"))
+                {
+                    ans="Reds and Pinks make a decent match. Both these signs have their strengths and weaknesses. This fiery-airy combo can create a lifelong relationship by respecting their differences. Both Reds and Pinks are polar opposites, but their complementary traits help maintain harmony in the relationship. They share great chemistry and can be a dynamic duo if they learn to compromise.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="redv1" && output2=="scarletv2") ||(output1=="scarletv1" && output2=="redv2"))
+                {
+                    ans="This pair often enjoys a spectacular outcome when working together. The energy, passion and adventurousness of Reds and Scarlets combine to produce results above and beyond what either could have done alone. But there are also times when aspects of Reds and Sacrlets may clash. The desire to lead, to be in the spotlight, to be recognized as unique, and other Red traits can make it difficult to work together toward a common goal.The sooner they recognize their common traits, the easier it is to build workarounds to make sure your similarities do not clash. Create separate areas where you can both shine, find ways to share the spotlight, or take turns being out in front. It will take considerable effort, but always strive to mesh your incredible drives and passions and find ways to pull together";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="redv1" && output2=="bluev2") ||(output1=="bluev1" && output2=="redv2"))
+                {
+                    ans="You are both committed and hard-working which makes you the most boring color combination of all time; laughing at yourselves will help with this. Incidentally, you are also probably the most productive color combination of all time. While you are wonderfully efficient, your duo probably is not the source of crazy, new ideas. To a Red, Blue may seem bogged down by precision and rules. On the other hand, a Red may seem reckless and imprudent to a Blue. Although this might be frustrating, you certainly complement each other. Chances are that together you will be far more fruitful than you would be with any other color.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="redv1" && output2=="brownv2") ||(output1=="brownv1" && output2=="redv2"))
+                {
+                    ans="Browns are calm and collected at all times. Even when they are angry, they are able to express their opinions in a mature manner. Meanwhile, Reds will fly off the handle. They think emotionally rather than logically. A self-restrained Brown would not be happy with how moody and temperamental an Reds can act. Reds and Browns will struggle to stay friends because Browns would now allow an Reds to disrespect them. They would not forgive and forget so easily.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="redv1" && output2=="silverv2") ||(output1=="silverv1" && output2=="redv2"))
+                {
+                    ans="You both approach social interactions with a bold courage, although the emotional impulse which drives your courage is quite different. With this in mind, Reds, be aware that not all social behavior is to be taken literally. Although it does not feel efficient, try engaging a Silver in a short caper before getting down to business; tell a story, say something intentionally mysterious just for fun. This will help you build rapport with a Silver. Silvers, examine the motivations behind your behavior and ask yourself if there are better ways to accomplish your goals. Mystery is certainly an awesome hat to have in your closet, but hopefully you are not using it just to annoy.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="redv1" && output2=="purplev2") ||(output1=="purplev1" && output2=="redv2"))
+                {
+                    ans="There is potential for fantastic collaboration between a Red and Purple. Purple brings the creative, outside-of-the-box inspiration; Red brings the ambitious, enterprising charge toward the finish line. Together this may be a recipe for innovation. Purple on its own may never get past thinking and designing, but Red loves a new idea, takes it, and leads the charge. A word of caution: a team of only Red and Purple may do wise to bring on a pragmatist. You may benefit from a voice of practicality--someone to research, test, and plan. ";
+                    document.getElementById('para').innerText =ans;
+                }
+                //*******************************************************************************
+                if((output1=="greenv1" && output2=="greenv2"))
+                {
+                    ans="The chances that you two, as Greens, will erupt into conflict hovers somewhere between zero and minus zero. But that doesn’t mean you will be the most productive pair, either. The first issue that may harm your productivity is the fact you both prefer stability, so change (even productive change) can upset the status quo. A little-known fact about Greens is that under their very calm exteriors are some very strong opinions. And just because you are both Greens does not mean you have the same opinions on everything. While eruptions rarely occur, conflicts do not automatically resolve themselves. So don’t assume things are always great with each other. Keep checking in and keep support levels high.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="greenv1" && output2=="yellowv2") ||(output1=="yellowv1" && output2=="greenv2"))
+                {
+                    ans="Green and Yellow personality types work well together because they are opposite in nature but each provides what the other needs. Yellow personalities like to come up with ideas but are not great with follow-through, while Green types prefer to be given directions. This is perfect, because the Green-dominant person will happily carry out the Yellows plan. Yellow personalities love to talk and Green personalities are excellent listeners. Greens are a grounding force for the frenetic Yellow types, and the Yellows energy helps pull Green types out of their complacency. Even though Yellow-dominant people work quickly and Green personalities are slower, this would not cause friction because they both care about what others think, so they will be considerate of one another.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="greenv1" && output2=="whitev2") ||(output1=="whitev1" && output2=="greenv2"))
+                {
+                    ans="Green and White have a pleasant, joyful relationship because they need similar things. Both strive for comfort and security. They enjoy a cozy home, good food, nice clothes, wealthy possessions, strong relationships: all part of a snug, secure life. They could maintain fantastic family lives, often what others attempt in vain. Green and White work hard to maintain a good family life rather than flaunt themselves to the outside world. Problems could occur, if the greens tends to become too assertive, which could cause the whites to withdraw into its shell and let the friendship fade away. The greens must realise that the whites is extremely sensitive by nature, and the whites must speak openly to the greens rather than rely on emotional communication.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="greenv1" && output2=="orangev2") ||(output1=="orangev1" && output2=="greenv2"))
+                {
+                    ans="Green and Orange are not the best duo to move a project forward aggressively. You are both perfectly happy dwelling in the comfort zone. If you start to feel stuck, you may try bringing other personality types into the mix. As a team, you both help with team cohesion and harmony. Oranges, you see the positive side to any personality. By sharing this with the team, you may help change negative attitudes. You are also unafraid of disagreement; you see it as a natural expression of personality difference. While you don’t enjoy unhealthy or overly aggressive conflict, you find healthy conflict to be positive and growth-oriented. ";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="greenv1" && output2=="beigev2") ||(output1=="beigev1" && output2=="greenv2"))
+                {
+                    ans="A Beige is a perfectionist and loyal, while a Green is someone who is loving and nurturing towards their loved ones. They both are grounded, hard-working, dedicated, and practical, which will help them form a solid foundation in their relationship. However, both signs are stubborn, possessive, and never back down from an argument. That does not necessarily mean it is a bad thing. However, once they keep their differences aside and build a loving and trusting relationship over time, the Beige and Green compatibility is strong and unshakeable.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="greenv1" && output2=="pinkv2") ||(output1=="pinkv1" && output2=="greenv2"))
+                {
+                    ans="Pink and Greens compatibility is pretty low. These two signs are going to clash. Pinks love to go out, meet new people, and try new things. Meanwhile, Greens prefer to stay at home and stick to their routine. They will have completely different ideas on how to have fun during weekends. Plus, Greens are also stubborn. They are not afraid to get into arguments. Meanwhile, Pinks avoid confrontation at all costs.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="greenv1" && output2=="scarletv2") ||(output1=="scarletv1" && output2=="greenv2"))
+                {
+                    ans="The brash go-getter and the stress-free chillaxer may not have a lot in common aesthetically and can find themselves taken aback and irked by each other at times. That is okay, and may even be positive if you are committed to making it work! Greens, try not to sacrifice honesty for the sake of cohesion; positive conflict equals growth. Lean into a healthy disagreement. Try allowing yourself to be swept up by Scarlet ambition and vision. Scarlet, be aware when you are amping up your energy levels to compensate for the Greens around you. Be aware that Greens avoid conflict, and may reflexively voice agreement without true commitment, simply to keep the peace.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="greenv1" && output2=="bluev2") ||(output1=="bluev1" && output2=="greenv2"))
+                {
+                    ans="Green and Blue may just be the lowest stress color combination of them all: a low-key Green attitude that does not make a mountain out of a molehill and with detail-oriented Blue thinking that keeps on top of things. However, there is potential for seriously conflicting priorities. Blues may sometimes see Greens as not pulling their weight; Greens may see Blues as stressing out over every little thing. Both of you communicate nonverbally, and will be tempted to respond to the other is behavior by intensifying your own; Greens becoming ever more flagrantly chill, and Blues ever more aggressively diligent. So communicate! Allow your differences to complement each other instead of exacerbate the problem.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="greenv1" && output2=="brownv2") ||(output1=="brownv1" && output2=="greenv2"))
+                {
+                    ans="Browns and Greens make great friends because they have so much in common. They are both intelligent, so they can hold conversations on any topic. Although they are old souls, they are both playful deep down, so they can joke around with each other, too. Browns and Greens will be able to have serious conversations — and silly ones.";
+                    document.getElementById('para').innerText =ans;
+                }
+                
+                if((output1=="greenv1" && output2=="silverv2") ||(output1=="silverv1" && output2=="greenv2"))
+                {
+                    ans="Greens see strength in stability. Silver see strength in pushing through facade to a more “real” relationship. If you can understand where the other is coming from, you can get into a solid friendship. Silver may need to try less talk, more walk in terms of being the good they want to see. Greens should realize a well-placed critique can break the ice, with humor and without anxiety. Silvers may be able to bring a Green into a new situation by showing them that risk can be mysterious, even beautiful. Greens, you may be able to help a Silver open up, by modeling peaceful honesty.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="greenv1" && output2=="purplev2") ||(output1=="purplev1" && output2=="greenv2"))
+                {
+                    ans="Purples and Greens most likely get along perfectly well. If you can accept each other is attitudes as genuine, Purple and Green make for a relaxed, conflict-free team. It may be hard to solicit ideas from a Green, particularly when there is a difference of opinion in the room. Chances are the Green would foremost like to see resolution, even if it comes at the expense of the product...and there may even be times that preservation of work relationships is the most important thing. Purples, with their non-threatening quirkiness, may be able to help Greens engage in contentious work, and see that creative tension can come with enormous benefits. ";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                //*******************************************************************************
+
+                if((output1=="yellowv1" && output2=="yellowv2"))
+                {
+                    ans="The biggest advantage of a Yellow-Yellow friendship is that they have a lot of chances of becoming best friends. They have a knack for spotting each other from across a crowded room. Both the people are of social nature and would end up being the centre of the attention at parties with their antics. That is why they enjoy the company of other Twins. Masters of trivia, these two friends swap facts and anecdotes the way kids trade baseball cards. When these two get bored of one another, they'll easily part ways but then come together later, when they have more stories to share. There is always so much complementarity in this duo Yellow friendship that there is no space for jealousy in this bond.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="yellowv1" && output2=="whitev2") ||(output1=="whitev1" && output2=="yellowv2"))
+                {
+                    ans="Yellow-White compatibility is lower than most zodiac pairings. This is because Yellow and White have such different ideas of how a relationship should work. A Yellow partner needs to be fun and spontaneous. Meanwhile, White needs intimacy and connection. Whites are much more romantic. They crave deep, meaningful conversations. Meanwhile, Yellows are children at heart. They just want to have a good time. The differences in their communication style will make it hard for a relationship to last.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="yellowv1" && output2=="orangev2") ||(output1=="orangev1" && output2=="yellowv2"))
+                {
+                    ans="Yellows and Oranges make great friends because they are both open to anything and love to have fun. When they get together, they are going to come up with clever, innovative ways to spend their time. Yellow and Orange are never going to have the same experience twice, so they are never going to be bored. Their interactions, adventures, and conversations will be unpredictable. They will keep each other on their toes and keep each other laughing. Their friendship will be all about having a good time.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="yellowv1" && output2=="beigev2") ||(output1=="beigev1" && output2=="yellowv2"))
+                {
+                    ans="A relationship between a Yellow and a Beige is one that evolves over time. Both friends need to take an effort to understand and appreciate each other. Yellow could often have more than one opinion about everything. Beige must accept this character of Yellow, and act accordingly. If they could understand each other well, Yellow and Beige could have a long lasting friendship. Initially Yellow might find Beige too serious and fussy. Both need to be patient and wait for their friendship to blossom.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="yellowv1" && output2=="pinkv2") ||(output1=="pinkv1" && output2=="yellowv2"))
+                {
+                    ans="These two colors are going to form a strong friendship because they both hate being alone. They prefer going out and having a good time with people who understand them. Their favorite thing to do is experience new places, people, and cultures. They will have a great time exploring the world together and making memories that will last a lifetime. Plus, whenever one of them needs a little push to go on a date or apply for a job, they will encourage each other. They will cheer each other on. The biggest problem these two signs will have is actually following through on their plans to hang out together. Yellow can be pretty flaky and might cancel plans at the last second. Meanwhile, Pink might end up getting sidetracked by helping out others with chores or working late at the office to please their boss. They never want to say no when someone asks them for a favor. However, as long as these two signs make time for each other, their friendship should remain strong.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="yellowv1" && output2=="scarletv2") ||(output1=="scarletv1" && output2=="yellowv2"))
+                {
+                    ans="Scarlet and Yellow personalities are both action-driven, a quality that makes them a good match. When they work together, things get done quickly. The Yellow-dominant person will likely come up with the idea and the Scarlet will make all of the decisions and plan the attack. Without the careful eye of a Blue or Green type, the quality of work might suffer, but the results will be immediate, and both Scarlet and Yellow personalities will be happy with them. Both are clear communicators, so misunderstandings and hurt feelings will be infrequent.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="yellowv1" && output2=="bluev2") ||(output1=="bluev1" && output2=="yellowv2"))
+                {
+                    ans="Yellow and Blue form a strong, deep friendship. They comprehend each other very well, and both are vivacious and energetic. Problems between them occur very rarely. But Blues could, at times, state their remarks too dryly, which could hurt Yellows. However both of them forgive and forget their grievances easily, and seldom hold ill will against each other.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="yellowv1" && output2=="brownv2") ||(output1=="brownv1" && output2=="yellowv2"))
+                {
+                    ans="These colors do not have much in common. They will rarely show up to the same parties because they run in completely different circles. However, when they have the chance to sit down and talk, they will have plenty of interesting discussions. Yellows and Browns are both intelligent, so they can keep up with each other. They will learn a lot from each other. These signs will make great work friends — but they might not hang out at all outside of the office.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="yellowv1" && output2=="silverv2") ||(output1=="silverv1" && output2=="yellowv2"))
+                {
+                    ans="This is one of the strongest pairings. Both Yellow and Silver are hungry for adventure, so they will never be bored when they are in the same room. They will come up with plenty of fun, fresh ideas on how to spend their time together. When one of them thinks of a new place to visit or adventure to experience, the other will blindly follow. They will never talk each other out of having a good time. They will encourage each other to live wild and carefree.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="yellowv1" && output2=="purplev2") ||(output1=="purplev1" && output2=="yellowv2"))
+                {
+                    ans="Yellows and Purples are both horrible at decision-making. When they hang out, they are going to have a hard time figuring out what to do together. They will want the other person to make the decision. Neither of them will want to act as the leader, which could cause tension. Although a Yellow-Purple pair will be able to talk to each other for hours on end, they would not get much accomplished. They do not make great teammates.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                //*******************************************************************************
+
+                if((output1=="whitev1" && output2=="whitev2"))
+                {
+                    ans="White has uncanny instincts about people. That's why they attract each other like magnets. Both share a weird sense of humour that few others understand. When two Whites get together, they start laughing like lunatics. The duo Whites understand one anothers rhythm, they do not subscribe to pop psychology and the notion that every moment must be spent being happy. Before meeting each may have felt there was something wrong with themselves, for not being deliriously joyful all the time, that is what makes the friendship special, like souls who believe in a range of emotions, including sentimentality and sadness. They both know how to make money and hold on to it. As a result, they often use their friendship as a launching pad to a successful business. At times, their extreme mood swings can cause them to snip at each other.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="whitev1" && output2=="orangev2") ||(output1=="orangev1" && output2=="whitev2"))
+                {
+                    ans="A friendship between a White and a Orange is one in which both friends could understand and provide for each other. Orange love to be respected and admired, and White look for steadiness and emotional happiness. Both signs require dedication and support, and present them to each other. They are both faithful to each other, often possessive of each other, especially among other friends. Their desires are very similar, and one sign could give the other what they need. They usually form a strong friendship that could stand the test of time.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="whitev1" && output2=="beigev2") ||(output1=="beigev1" && output2=="whitev2"))
+                {
+                    ans="A friendship between a White and a Beige is a plain and simple, yet powerful, relationship that gets better and better over time. White and Beige are well disciplined and strive to attain their objectives. They are earnest and dedicated to their friendship, and appreciate each other a lot. Beige admire Whites quiet yet immense strength, and White admire Beiges flexibility.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="whitev1" && output2=="pinkv2") ||(output1=="pinkv1" && output2=="whitev2"))
+                {
+                    ans="A friendship between a White and a Pink is a strong relationship with each sign complementing the other and providing exactly what the other do not have. White and Pink seek after opulence and comfort, as well as stability and security. Their bond would be even stronger if they worked towards common ends. Their relationship develops gradually over time. Initially, they might seem very dissimilar to each other. But as they become more acquainted with each other, they begin to respect and admire each other.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="whitev1" && output2=="scarletv2") ||(output1=="scarletv1" && output2=="whitev2"))
+                {
+                    ans="Scarlets and Whites express their emotions in different ways, but they are both sensitive. They can make great friends as long as they are careful with the way they communicate. Scarlets cannot start screaming out of nowhere. And Whites cannot act passive-aggressive and give the silent treatment. If they let their negative emotions get the best of them, then they will push each other away. However, if they treat each other with kindness and respect, they can overcome their differences in personality.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="whitev1" && output2=="bluev2") ||(output1=="bluev1" && output2=="whitev2"))
+                {
+                    ans="A friendship between a White and a Blue is one that requires time to overcome their initial difficulties. White and Blue need to allow each other time and space to comprehend and appreciate each other. Blues love action and adventure, and do not mind taking chances to enjoy new things in life. White hold stability and security at a very high value. Whites strong sense of loyalty might ask for a devotion to friendship that Blues would not be willing to provide, at least initially. However, as their friendship progresses, Blues would appreciate the value of emotional strength that Whites provide, and eventually commit themselves to a strong bond between them.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="whitev1" && output2=="brownv2") ||(output1=="brownv1" && output2=="whitev2"))
+                {
+                    ans="A companionship between a White and a Brown features strong determination and force of character. Browns are rational, plain, and simple, and Whites add feelings and sentiments to the friendship. Both partners expect a lot from each other, and appreciate each other as well. White admire Browns devotion, and Browns admire Whites persistence. They generally have a deep, fruitful relationship.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="whitev1" && output2=="silverv2") ||(output1=="silverv1" && output2=="whitev2"))
+                {
+                    ans="In a friendship between a White and an Silver, two colors from the opposite ends are drawn together. Silvers have a modern, flashy outlook of life, and Whites are sensitive and emotional in nature. Silvers are energetic and friendly, and work well when dealing with people. Whites are touchy and reclusive, and tend to retire to themselves in general. Both signs should learn to merge their respective qualities in a productive manner, and they could have a successful friendship.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="whitev1" && output2=="purplev2") ||(output1=="purplev1" && output2=="whitev2"))
+                {
+                    ans="A friendship between a White and a Purple is a healthy combination of two people with similar character and spirit. Whites like to initiate things, and Purples are inspired by Whites ideas. Both are kind and compassionate, and tolerate each other a lot. Whites could help Purples realise their ideas and plans; and Purples could introduce inventiveness and versatility into the lives of Whites. They could form a very strong and adaptable friendship.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                //*******************************************************************************
+
+                if((output1=="orangev1" && output2=="orangev2"))
+                {
+                    ans="When a Orange joins forces with another Orange, an enjoyable association is bound to result. Oranges bring joy and optimism to everyone and know exactly when to help and when to step back. The only real problem for two Oranges is that neither of you may be comfortable taking the lead because you both enjoy being helpful. Of course, one of you may know the work environment so well that you may enjoy taking the lead even if it is not your natural style. Regardless, given your mutual desire to make the world a better place every day, you are sure to find ways mesh together to get the job done ";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="orangev1" && output2=="beigev2") ||(output1=="beigev1" && output2=="orangev2"))
+                {
+                    ans="Orange and Beige can make great friends as long as they respect their differences. In fact, their differences can actually bring them closer together. Oranges love to talk about themselves for hours on end. Luckily, Beiges are great listeners. Although they are critical, they are happy to hear opinions other than their own. These colors are also incredibly friendly. Oranges are egocentric and Beiges are shy, but they will feel comfortable together once they get to know each other.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="orangev1" && output2=="pinkv2") ||(output1=="pinkv1" && output2=="orangev2"))
+                {
+                    ans="Oranges and Pinks make a great pair. After all, Oranges love to be spoiled and Pinks love to spoil their friends. Plus, Pinks would not mind blending in with the background. They will allow a Orange to take center stage and get all the attention they crave. As friends, these signs will attend plenty of social events. They will have a great time getting dressed up together and meeting new people. They will also enjoy shopping together since they both love to look nice.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="orangev1" && output2=="scarletv2") ||(output1=="scarletv1" && output2=="orangev2"))
+                {
+                    ans="Scarlet and Orange may be at different ends of the introvert-extrovert spectrum. It can be a lot of fun to hang out, as long as you know this about each other. Orange, if you need an advocate or ally, try reaching out to a Scarlet. Scarlet will gladly take the spotlight at a meeting, while Orange may feel more comfortable talking one-on-one afterwards. Scarlet, be aware of the Oranges in the room, and ask them to speak up, or pause before speaking to give others a chance. And Orange, if you have a great idea, try blurting it out before you can second guess yourself.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="orangev1" && output2=="bluev2") ||(output1=="bluev1" && output2=="orangev2"))
+                {
+                    ans="Blues and Oranges are both givers, although in different ways. Blues give themselves wholeheartedly to work; you can count on them to stay late and to care about doing the smallest things right. Oranges give themselves to people, anticipating their needs, saying just the right thing to put people at ease. Although you are both givers, you may not recognize this about each other because of the different ways that you express it. Learn how to give and receive gifts in the other person’s style. You may not always notice that you are being given a gift when it’s not on your wavelength. ";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="orangev1" && output2=="brownv2") ||(output1=="brownv1" && output2=="orangev2"))
+                {
+                    ans="These two colors can learn a lot from each other, as long as they put aside their differences. Unfortunately, they tend to rub each other the wrong way. Browns are highly intelligent and ruled by logic, so they assume they are always right. Meanwhile, Oranges are stubborn. Even when they are wrong, they are going to insist that they are right. They are not going to back down from a disagreement. Their fights are never going to reach an endpoint. ";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="orangev1" && output2=="silverv2") ||(output1=="silverv1" && output2=="orangev2"))
+                {
+                    ans="Silvers and Oranges both want to improve relationships. Oranges may put themselves out there in risky and vulnerable ways, and may get hurt by a Silver, especially if a Silver uses the opportunity to crack a joke. Oranges, realize that a snarky joke is sometimes intended to be friendly when it is used to start rapport. A Silver will likely be overjoyed if you snark back. In reality, emotional closeness and cutting through the nonsense are both necessary for building close relationships. With this in mind, you may start to enjoy each others company.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="orangev1" && output2=="purplev2") ||(output1=="purplev1" && output2=="orangev2"))
+                {
+                    ans="Purples and Oranges will tend to communicate well with each other; Oranges try to be great listeners, and Purples are expressive; well, at least when they have something original to share. Purples may enjoy hanging out with someone who laughs at their odd remarks (it takes creative energy to come up with new things to say!), and lobs a joke of their own back. Purples and Oranges might not be the best duo to get things accomplished quickly and efficiently. Oranges promote team cohesion and morale, and Purples generate new ideas and solve problems. So you may find it helpful to bring a Blue or Crimson on the team to manage and drive outcomes.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                //*******************************************************************************
+
+                if((output1=="beigev1" && output2=="beigev2"))
+                {
+                    ans="Beige and Beige make pleasant and harmonious friends. They are both hardworking, logical, and loyal. They enjoy the pleasures of life, and with their determination and financial security, it will be easy for them to achieve all that they want. Both very organized, so whether they are roommates or business partners, things are always tidy. ";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="beigev1" && output2=="pinkv2") ||(output1=="pinkv1" && output2=="beigev2"))
+                {
+                    ans="A relationship between a Beige and a Pink is filled with surprise and mystery. However, Beige and Pink complement each other well, and are comfortable with each other. Both colors have an aesthetic sense, and want stability and security. Their wishes and ambitions are similar, and thus they could form a prolific partnership. Beige and Pink might not hit it off right away. But as they comprehend and appreciate each other, a close friendship forms between them.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="beigev1" && output2=="scarletv2") ||(output1=="scarletv1" && output2=="beigev2"))
+                {
+                    ans="Scarlets love to hear themselves talk, and Beige are excellent listeners, so their conversations could last hours. Both of these have a great sense of humor. They will make each other laugh and form memories that will last a lifetime. As long as they accept their differences and agree to disagree at times, Scarlets and Beiges will remain great friends.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="beigev1" && output2=="bluev2") ||(output1=="bluev1" && output2=="beigev2"))
+                {
+                    ans="A Beige and a Blue form a well balanced relationship. Blue are gregarious and adventurous, and Beige are studious and like mental exercise. Both partners love to converse and discuss things with each other. Beige want to create a strong bond between them right away, while Blue like a slower, steadier friendship that evolves over time. However, they would soon appreciate the loyalty and steadiness of Beige, and a deep relationship forms between them.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="beigev1" && output2=="brownv2") ||(output1=="brownv1" && output2=="beigev2"))
+                {
+                    ans="These colors are going to get along well because they are both introverts. They would rather hang out at their house, drinking and playing video games, than have an exciting night out on the town. These colors do not need much in order to feel fulfilled. They simply need good company. These colors are also fans of routine. They would not mind grabbing dinner at the same restaurant every weekend. Beige and Brown would not be bored by the repetition. They will feel comforted by it.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="beigev1" && output2=="silverv2") ||(output1=="silverv1" && output2=="beigev2"))
+                {
+                    ans="Beiges and Silvers are connected by their rationality. This is the base for their trust as they find it baffling to not trust their partners. Beiges can find it difficult to trust people at the beginning however, with Silvers, they will quickly feel that they can be trusted without question. In a Beige-Silver friendship, they might drift apart at times due to their personalities which are quite different, to begin with. To prevent this, they must put some effort into their friendship and accept each other for who they are.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="beigev1" && output2=="purplev2") ||(output1=="purplev1" && output2=="beigev2"))
+                {
+                    ans="A friendship between a Beige and a Purple is a very compatible relationship. Beige and Purple lie opposite to each other. Thus the partners balance each other wonderfully, and provide for each others deficiencies. Beige and Purple form a plain and simple pair, devoting themselves to each other and to their other friends. Both colors bring out the good qualities in each other, and form a lasting friendship.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                //*********************************************************************************
+
+                if((output1=="pinkv1" && output2=="pinkv2"))
+                {
+                    ans="Pink possess the quality of trying out new things. Although they may lack initiativeness sometimes, they are always willing to discover and explore the unknown. They are also terrific motivators when it comes to their friendship, making Pink and Pink friendship compatibility quite strong.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="pinkv1" && output2=="scarletv2") ||(output1=="scarletv1" && output2=="pinkv2"))
+                {
+                    ans="Scarlets and Pinks make a decent match. Both these signs have their strengths and weaknesses. This fiery-airy combo can create a lifelong relationship by respecting their differences. Both Scarlets and Pinks are polar opposites, but their complementary traits help maintain harmony in the relationship. They share great chemistry and can be a dynamic duo if they learn to compromise.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="pinkv1" && output2=="bluev2") ||(output1=="bluev1" && output2=="pinkv2"))
+                {
+                    ans="A friendship between a Pink and a Blue is a perfect blend of two people who have so much to share with each other. Blues are adventurers, always exploring new things. Pinks could draw conclusions from Blues experiences, and provide discretion and advice to their friend. The relationship is filled with action and adventure; thus both colors would relish the friendship.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="pinkv1" && output2=="brownv2") ||(output1=="brownv1" && output2=="pinkv2"))
+                {
+                    ans="A friendship between a Pink and a Brown is a relationship between two people who do not have too much in common. The more they concur with each other, the stronger their relationship becomes. Pink and Brown have a lot of similarities, but they are not very obvious. Pinks are social and outgoing, and love to interact with people. Browns are more sagacious, and work constantly towards their goals without giving much attention to other things. Both colors achieve their ambitions, but in very dissimilar ways.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="pinkv1" && output2=="silverv2") ||(output1=="silverv1" && output2=="pinkv2"))
+                {
+                    ans="Silver and Pink will have a harmonious friendship. With Pinks need for balance and their people-pleasing attitude, and Silvers free spirit but adaptive nature, these two colors share a love for life, freedom, and intellect. A Silver will want to be spontaneous, explore, and meet new people. A Pink will want to do the same but might be a bit less spontaneous about it. Their similar interest in wanting to explore is what is going to keep them together.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="pinkv1" && output2=="purplev2") ||(output1=="purplev1" && output2=="pinkv2"))
+                {
+                    ans="A relationship between a Pink and a Purple is a harmonious and well matched combination. Both colors are well suited for each other. Pink love to indulge themselves in wonderful reality, and Purple love to live in a world of imagination. Both friends are open and honest with each other, and strive for peace and concord.";
+                    document.getElementById('para').innerText =ans;
+                }
+                //**************************************************************
+
+                if((output1=="scarletv1" && output2=="scarletv2"))
+                {
+                    ans="This same-color pair often enjoys a spectacular outcome when working together. The energy, passion and adventurousness of two Scarlets combine to produce results above and beyond what either could have done alone. But there are also times when aspects of Scarlets may clash. The desire to lead, to be in the spotlight, to be recognized as unique, and other Scarlet traits can make it difficult to work together toward a common goal. The sooner Scarlets recognize their common traits, the easier it is to build workarounds to make sure your similarities do not clash. Create separate areas where you can both shine, find ways to share the spotlight, or take turns being out in front. It will take considerable effort, but always strive to mesh your incredible drives and passions and find ways to pull together";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="scarletv1" && output2=="bluev2") ||(output1=="bluev1" && output2=="scarletv2"))
+                {
+                    ans="You are both committed and hard-working which makes you the most boring color combination of all time; laughing at yourselves will help with this. Incidentally, you are also probably the most productive color combination of all time. While you are wonderfully efficient, your duo probably is not the source of crazy, new ideas. To a Scarlet, Blue may seem bogged down by precision and rules. On the other hand, a Scarlet may seem reckless and imprudent to a Blue. Although this might be frustrating, you certainly complement each other. Chances are that together you will be far more fruitful than you would be with any other color. ";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="scarletv1" && output2=="brownv2") ||(output1=="brownv1" && output2=="scarletv2"))
+                {
+                    ans="Browns are calm and collected at all times. Even when they are angry, they are able to express their opinions in a mature manner. Meanwhile, Scarlets will fly off the handle. They think emotionally rather than logically. A self-restrained Brown would not be happy with how moody and temperamental an Scarlets can act. Scarlets and Browns will struggle to stay friends because Browns would now allow an Scarlets to disrespect them. They would not forgive and forget so easily.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="scarletv1" && output2=="silverv2") ||(output1=="silverv1" && output2=="scarletv2"))
+                {
+                    ans="You both approach social interactions with a bold courage, although the emotional impulse which drives your courage is quite different. With this in mind, Scarlets, be aware that not all social behavior is to be taken literally. Although it does not feel efficient, try engaging a Silver in a short caper before getting down to business; tell a story, say something intentionally mysterious just for fun. This will help you build rapport with a Silver. Silvers, examine the motivations behind your behavior and ask yourself if there are better ways to accomplish your goals. Mystery is certainly an awesome hat to have in your closet, but hopefully you are not using it just to annoy.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="scarletv1" && output2=="purplev2") ||(output1=="purplev1" && output2=="scarletv2"))
+                {
+                    ans="There is potential for fantastic collaboration between a Scarlet and Purple. Purple brings the creative, outside-of-the-box inspiration; Scarlet brings the ambitious, enterprising charge toward the finish line. Together this may be a recipe for innovation. Purple on its own may never get past thinking and designing, but Scarlet loves a new idea, takes it, and leads the charge. A word of caution: a team of only Scarlet and Purple may do wise to bring on a pragmatist. You may benefit from a voice of practicality--someone to research, test, and plan. ";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                //*******************************************************
+
+                if((output1=="bluev1" && output2=="bluev2"))
+                {
+                    ans="Theoretically, two Blues working together should be an ideal pair. How could two dependable and organized folks not work together to improve the outcomes of both? Well, a part of being Blue is also having a distinct preference for calling the shots and we all know what happens when we have more than one chef in the kitchen. Sometimes you may find that it is best to agree to have different areas where you can each explore your own ideas. But that is certainly not the typical outcome, and with some compromises and cooperation you can both apply your incredible abilities to work together for everyones advantage.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="bluev1" && output2=="brownv2") ||(output1=="brownv1" && output2=="bluev2"))
+                {
+                    ans="Blues and Browns have very little in mutual and shall struggle to stick around each other most of the time. They might have to put in a lot to keep things running around them and create balance in their friendship. To be exact, Blues needs to take the help of their Brown mates when they lack the push to achieve goals. On flipping, Blues must make their Brown friends learn the correct worth of enthusiasm and freedom.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="bluev1" && output2=="silverv2") ||(output1=="silverv1" && output2=="bluev2"))
+                {
+                    ans="Although honesty is important to both of you, how you understand it is very different. Blues relate honesty closely to work ethic and clarity, where Silvers see clearly the hypocrisies and contradictions in life, and feel the only honest response is to point them out. Blues want to get things done, and do the best with what they are got. Silvers see a lot of gray. Silvers, remember that Blues love organization and control: bolster them, congratulate them on their successes. Blues, remember that Silvers may see ambiguity where you see clarity. Explain yourself conversationally, and be humble. A little bit of acknowledgement will go a long way toward getting a Silver on board.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="bluev1" && output2=="purplev2") ||(output1=="purplev1" && output2=="bluev2"))
+                {
+                    ans="Chances are that Purples and Blues find beauty and meaning in distinctly divergent ways. With your strengths combined, Purples and Blues may create functional beauty. A Blue may bring the detailed, orderly perfectionism needed to launch something fantastic. A Purple may bring an unexpected work-around to a tough problem, or a seemingly odd idea that with a Blues rational perspective may lead to a workable solution. Pause to solicit ideas from each other, and affirm each others strengths. Often the natural human instinct is to feel frustration when confronted with difference...seek to cultivate joy in the diversity between you. ";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                //********************************************************************
+
+                if((output1=="brownv1" && output2=="brownv2"))
+                {
+                    ans="Brown and Brown know that nothing in life is free or easy. They appreciate hard work, and they could find themselves drawn to people who are on the same page as them. They both seem to value the same traditional things in life: respect, ambition, money, and financial stability and security, hard work, and achieving their goals. With their earth element, Brown and Brown will appreciate luxury items, and they will work the hardest, even if that means having to work together, to get them.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="brownv1" && output2=="silverv2") ||(output1=="silverv1" && output2=="brownv2"))
+                {
+                    ans="A friendship between Silver and Brown will be quite boring. In fact, it might be painful to watch these two try to get along at times. Besides loyalty and consistency, these two have very different life values: Brown likes boundaries while Silver likes freedom.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="brownv1" && output2=="purplev2") ||(output1=="purplev1" && output2=="brownv2"))
+                {
+                    ans="Purple and Brown are both intelligent signs. They will have a lot to talk about at work or during parties. Their friendship will stay strong, as long as they agree to open up to each other and stop keeping secrets. However, Browns appreciate honesty and Purples are known to bend the truth. They only do it to save their friends from heartache, but a Brown would not be happy about being deceived. If they catch each other in a lie, it could hurt a great friendship.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                //****************************************************
+
+                if((output1=="silverv1" && output2=="silverv2"))
+                {
+                    ans="Who hates each other more: two punks who love different bands, or a blue-haired social justice warrior stuck in a room with an internet troll? When you buck the establishment, it's hard to get along with other anti-establishment types unless their interests align exactly with your own. Fortunately, the antidote is also your strong suit: self-deprecating humor and snarky comments. Admit the flaws in your own crusade, and hopefully they'll admit the flaws in theirs too and you can have a good laugh about the hopelessness of it all. Then move on and get some freakin' work done. Shoulder to shoulder you'll quickly find that the other person brings sharp clarity and new perspectives that can really push the project forward and expand your own understanding.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                if((output1=="silverv1" && output2=="purplev2") ||(output1=="purplev1" && output2=="silverv2"))
+                {
+                    ans="Silvers and Purples are likely to share personality traits and maybe even interests and may even be amused and inspired by each other. However, although Silvers and Purples tend to appreciate one another, there is always potential for conflict or misunderstanding. Silvers may intentionally say something obtuse, and Purples have been known to wax poetic, especially when they have just discovered a new artist or author. Silvers, remember that it takes a lot of courage to put yourself out there. Until you have risked as much as the Purple has, do not dare speak to them in a way that is going to make them hold back. Ease up on the brutal side of your brutal honesty.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+                //*****************************************************
+
+                if((output1=="purplev1" && output2=="purplev2"))
+                {
+                    ans="If days were only longer, Purples could find ways to work so much more effectively together. There never seems to be enough time to describe all the ideas that fill every Purple’s mind. Even when working in close proximity, a Purple often prefers to have more time focusing on the task at hand without the presence of another. The key is to find the areas where you both. The key is to find the areas where you both excel and give each other recognition and support for your individual strengths. It may also take some volitional effort by both of you to make sure productivity doesn’t lose out to the desire to brainstorm. However, when you provide mutual support and both help each other stay focused on productivity, chances are you will be an exceptional pair of colleagues.";
+                    document.getElementById('para').innerText =ans;
+                }
+
+            }
+        </script> 
+
+<div class="m-4" style="background-color: #d4d4d4; border-radius: 15px; border: 5px solid black;"id="navi">
+    <nav class="navbar navbar-expand-sm " >
+        <div class="container-fluid">
+            
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a href="Home page.html" class="nav-link" style="color:black; font-family:IM Fell english ; font-size: 20px;">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color:black; font-family:IM Fell english; font-size: 20px;">Zodiac Signs</a>
+                        <div class="dropdown-menu" style="font-family: Amarante;background-color: #e4dccf;">
+                            <a href="Fire Zodiac signs.html" class="dropdown-item" target="_blank">Aries</a>
+                            <a href="Earth Zodiac signs.html" class="dropdown-item" target="_blank">Taurus</a>
+                            <a href="Air Zodiac signs.html" class="dropdown-item" target="_blank">Gemini</a>
+                            <a href="Air Zodiac signs.html" class="dropdown-item" target="_blank">Aquarius</a>
+                            <a href="Fire Zodiac signs.html" class="dropdown-item" target="_blank">Leo</a>
+                            <a href="Air Zodiac signs.html" class="dropdown-item" target="_blank">Libra</a>
+                            <a href="Fire Zodiac signs.html" class="dropdown-item" target="_blank">Sagittarius</a>
+                            <a href="Water Zodiac signs.html" class="dropdown-item" target="_blank">Scorpio</a>
+                            <a href="Water Zodiac signs.html" class="dropdown-item" target="_blank">Cancer</a>
+                            <a href="Earth Zodiac signs.html" class="dropdown-item" target="_blank">Capricorn</a>
+                            <a href="Water Zodiac signs.html" class="dropdown-item" target="_blank">Pisces</a>
+                            <a href="Earth Zodiac signs.html"class="dropdown-item" target="_blank">Virgo</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color:black; font-family:IM Fell english; font-size: 20px;">Elements</a>
+                        <div class="dropdown-menu" style="font-family: Amarante;background-color: #e4dccf;">
+                            <a href="Fire Element.html" class="dropdown-item" target="_blank">Fire</a>
+                            <a href="Water Element.html" class="dropdown-item" target="_blank">Water</a>
+                            <a href="Air Element.html" class="dropdown-item" target="_blank">Air</a>
+                            <a href="Earth Element.html" class="dropdown-item" target="_blank">Earth</a>
+                            
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color:black; font-family:IM Fell english; font-size: 20px;">Compatibility</a>
+                        <div class="dropdown-menu" style="font-family: Amarante;background-color: #e4dccf;">
+                            <a href="Color Compatibility.html" class="dropdown-item" target="_blank">Colour compatibility</a>
+                            <a href="Zodiac Compatibility.html" class="dropdown-item" target="_blank">Zodiac compatibility</a>
+                           </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color:black; font-family:IM Fell english; font-size: 20px;">Colours</a>
+                        <div class="dropdown-menu" style="font-family: Amarante; background-color: #e4dccf;">
+                            <a href="About the Colors.html" class="dropdown-item" target="_blank">About the colours</a>
+                            <a href="Color Compatibility.html" class="dropdown-item" target="_blank">Colour compatibility</a>
+                           </div>
+                    </li>
+                </ul>
+                
+            </div>
+            <p style="font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;font-size: 20px;margin-right: 10px;color:#22404A;display:none;" id="logo">Zodix</p>
+        </div>
+        
+    </nav>    
+    
+  </div>
+    </head>
+    <body style="background-color:#E4DCCF ;border:15px #22404A;border-radius: 15px;border-style: dashed;">
+        <br>
+        <h1 style="text-align:center;color:#22404a;font-size: 40px;font-family:Chelsea Market" id="heading">Color Compatibility</h1>
+        <br>
+       
+            <div class="container" style="background-color:#b2bcbb;height:270px;width:1000px;border: 5px solid #22404a;border-radius: 20px;" >
+            <div class="row">
+                <div class="col">
+                    <br><br>
+                    <center>
+                    <select id="color1" name="color1" style="height:80px;width:300px;font-size: 22px;border: 5px solid #22404A;border-radius: 11px;background-color: #E4DCCF;text-align: center;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: bold;">
+                    <option id="sample1">Choose a color:</option>
+                    <option id="red1" value="redv1">Red</option>
+                    <option id="green1" value="greenv1">Green</option>
+                    <option id="yellow1" value="yellowv1">Yellow</option>
+                    <option id="white1" value="whitev1">White</option>
+                    <option id="orange1" value="orangev1">Orange</option>
+                    <option id="beige1" value="beigev1">Beige</option>
+                    <option id="pink1" value="pinkv1">Pink</option>
+                    <option id="scarlet1" value="scarletv1">Scarlet</option>
+                    <option id="blue1" value="bluev1">Blue</option>
+                    <option id="brown1" value="brownv1">Brown</option>
+                    <option id="silver1" value="silverv1">Silver</option>
+                    <option id="purple1" value="purplev1">Purple</option>
+                    </select>
+                    
+                </center>
+                </div>
+                <div class="col">
+                    <br><br>
+                    <center>
+                    <select id="color2" name="color2" style="height:80px;width:300px;font-size: 22px;border: 5px solid #22404A;border-radius: 11px;background-color: #E4DCCF;text-align: center;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: bold;">
+                        <option value="sample2">Choose a color:</option>
+                    <option id="red2" value="redv2">Red</option>
+                    <option id="green2" value="greenv2">Green</option>
+                    <option id="yellow2" value="yellowv2">Yellow</option>
+                    <option id="white2" value="whitev2">White</option>
+                    <option id="orange2" value="orangev2">Orange</option>
+                    <option id="beige2" value="beigev2">Beige</option>
+                    <option id="pink2" value="pinkv2">Pink</option>
+                    <option id="scarlet2" value="scarletv2">Scarlet</option>
+                    <option id="blue2" value="bluev2">Blue</option>
+                    <option id="brown2" value="brownv2">Brown</option>
+                    <option id="silver2" value="silverv2">Silver</option>
+                    <option id="purple2" value="purplev2">Purple</option>
+                        </select>
+                    </center>
+                </div>
+            </div>
+            <br><br>
+            <center><button type="button" style="height:50px;width:210px;border:3px solid #22404a;background-color: #4c6a78;border-radius: 25px;color:#E4DCCF" onclick="return answer()" id="btnmain" ><b>Get Your Compatibility!</b></button></center>
+           
+        </div>
+        <br><br>
+       <center><div>
+            <p id="para" style="font-size: 25px;font-family:'IM Fell English';width:1200px;text-align: center;color:#22404A"></p>
+        </div>
+    </center> 
+    <center><p style="font-family:monospace;font-weight: bold;text-align: center;"><a href="About the Colors.html">Click Here </a>to get to know your personality color!</p></center>
+        
+    <div style="color:#22404A;text-align: center;font-weight: bold;position: fixed;bottom: 0;left:30">
+        <p>
+          Made By Soumyyaa Jain & Gargi Shukla
+        </p>
+      </div>
+
+    
+    </body>
+</html>

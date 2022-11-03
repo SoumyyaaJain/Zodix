@@ -1,0 +1,600 @@
+<html>
+    <head>
+        <title>Compatibility</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <link href='https://fonts.googleapis.com/css?family=Chelsea Market' rel='stylesheet'>
+   <link href='https://fonts.googleapis.com/css?family=IM Fell English' rel='stylesheet'>
+
+   <script>
+     $(document).ready(function(){
+                $('#id1').focus(function(){
+                    $(this).css("background-color","#e0b4a4");
+                });
+
+                $('#id1').blur(function(){
+                    $(this).css("background-color","#e4dccf");
+                });
+
+                $('#id2').focus(function(){
+                    $(this).css("background-color","#e0b4a4");
+                });
+
+                $('#id2').blur(function(){
+                    $(this).css("background-color","#e4dccf");
+                });
+
+                $('#btnmain').mouseenter(function(){
+                    $(this).css('color','#e0b4a4');
+                });
+
+                $('#btnmain').mouseleave(function(){
+                    $(this).css('color','#e4dccf');
+                });
+
+                $('#para').mouseenter(function(){
+                    $(this).css('font-weight','bold');
+                });
+
+                $('#para').mouseleave(function(){
+                    $(this).css('font-weight','400');
+                });
+            });
+
+            $(document).ready(function(){
+        $('#navi').mouseenter(function(){
+            $(this).css("border-color","#674a40");
+            $('#logo').show();
+        });
+
+        $('#navi').mouseleave(function(){
+            $(this).css("border-color","black");
+            $('#logo').hide();
+        });
+    });
+   </script>
+
+   <script>
+
+        function myfunction()
+        {
+            selectElement1=document.querySelector('#id1');
+            output1=selectElement1.value;
+
+            selectElement2=document.querySelector('#id2');
+            output2=selectElement2.value;
+        
+            if(output1=="ariesv1" && output2=="ariesv2")  
+            {
+                ans = "These two signs are molded by the planet Mars, so they'll lock horns frequently in small spats. Occasionally, they'll take things up a notch and create some real drama together. Aries are very protective of their personal space, so each member of this team should take pains to respect the other's domain. When these two show respect for each other's talent, things will go smoothly. They should also take turns assuming the leadership role. When forming a united front, nothing can stop this dynamic duo.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if(output1=="taurusv1" && output2=="taurusv2")
+            {
+                ans = "When two Bulls form a friendship, pure pleasure ensues. These two have highly developed senses. A deep appreciation for food, art, and luxury usually brings them together. A profound love of relaxation cements their bond. Although this pair may not accomplish very much together, they'll have a great time nonetheless. They love nothing more than kicking back, relaxing and laughing together. When they disagree, neither will budge, so that can be difficult. If they argue over where to eat or which movie to see, it's best to flip a coin.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if(output1=="librav1" && output2=="librav2")
+            {
+                ans = "Libras love to befriend members of their own sign. These people prize equality above all else. Having a friendship devoid of power struggles brings out the best in them. Although these two won't make decisions quickly - if at all - they'll enjoy discussing endless possibilities about where to eat, which movie to see, and how to best arrange their schedules. Exploring their options is a favorite activity of these pals. Both enjoy art, beauty, and luxury, so they'll spend much of their time going to museums, concerts, and movies.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if(output1=="leov1" && output2=="leov2")
+            {
+                ans = "Two Leos are a bundle of fun, but they can encounter trouble in their friendship. Each has a royal bearing and won't defer to anyone else. Unless these pals decide to hold court together, power struggles will occur. When they have a difference of opinion, neither will budge. Fortunately, these two are united on many fronts. Both love art, luxury, and entertainment. They have a fondness for sports and adore luxuriating in the sun. If they can tame their egos, this friendship will thrive.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if(output1=="sagittariusv1" && output2=="sagittariusv2")
+            {
+                ans = "Whenever two Sagittarians get together, a party breaks out. This fun-loving sign adores teaming up with someone who shares their festive spirit. Archers are optimistic, outgoing, and humorous. They love making people laugh and exploring unknown territory. Constant travelers, these two will fly off to far-flung places at the drop of the hat. Of course, their similarities can create problems from time to time. Sagittarius is brutally honest and has no problem issuing devastating criticism. As a result, this friendship could suffer from a total lack of diplomacy.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if(output1=="cancerv1" && output2=="cancerv2")
+            {
+                ans = "Cancer has uncanny instincts about people. That's why they attract each other like magnets. Both share a weird sense of humor that few others understand. When two Moon Children get together, they start laughing like lunatics. Often, they seem like they're speaking a special language of their own. They both know how to make money and hold on to it. As a result, they often use their friendship as a launching pad to a successful business. At times, their extreme mood swings can cause them to snip at each other.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if(output1=="scorpiov1" && output2=="scorpiov2")
+            {
+                ans = "This highly psychic sign has great instincts about who can support them. That's why so many Scorpions have at least one fellow member of their sign in their social circle. Scorpio knows they can rely on this pal to alert them to trouble, offer truthful feedback, and affirm their feelings. It isn't all smooth sailing with this friendship, however. Scorpions are jealous. They feel threatened when other friends try to supplant them (literally or possibly). If they manage to control their envious and competitive sides, it can be a positive bond.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if(output1=="aquariusv1" && output2=="aquariusv2")
+            {
+                ans = "Sociable Aquarius is happiest when paired with another Water Bearer. These two know how to bring out the best in each other. Whether they're talking about social reform or technological innovations or conspiracy theories, they have a great time. The one drawback to this friendship is stubborn behavior. When these friends are at odds, a stalemate occurs. It's incredibly difficult for Fixed Signs to compromise, especially with one another. If these two can loosen up and occasionally defer to each other, they'll enjoy a long-lasting friendship.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if(output1=="geminiv1" && output2=="geminiv2")
+            {
+                ans = "Geminis have a knack for spotting each other from across a crowded room. They're usually in crowded rooms, since they are such social creatures. Intelligent, witty, and charming, Gemini loves a good discussion. That's why they enjoy the company of other Twins. Masters of trivia, these two friends swap facts and anecdotes the way kids trade baseball cards. When these two get bored of one another, they'll easily part ways but then come together later, when they have more stories to share. Jealousy is rarely part of this friendship's equation.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if(output1=="virgov1" && output2=="virgov2")
+            {
+                ans = "Two Virgos can bring each other to tremendous heights or terrible depths. Both are intelligent, discerning individuals who are always striving for perfection. They're eager to hone each other's talents to diamond-like brilliance. At times, Virgo's hypercritical tendencies can cause problems. These two should take care to give each other constructive advice instead of cutting comments. Both have a deep appreciation for earthly pleasures like food, flowers, and fauna. They'll have a great time visiting beauty spots around the world. These book lovers will also enjoy plundering each other's libraries.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if(output1=="capricornv1" && output2=="capricornv2")
+            {
+                ans = "Two Capricorns make a great team. These two know they can depend on each other through thick and thin. Goats are famous for going the extra mile for those they love. Although they're both very cautious, they do encourage each other to take risks. That's because every Capricorn has the gift for recognizing other people's potential. When one Goat tells another they should start a business, develop a creative project, or buy a piece of property, the second Capricorn knows it's good advice. They form a strong bond that's reassuring.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if(output1=="piscesv1" && output2=="piscesv2")
+            {
+                ans = "Two Pisces form a mutual admiration society. These friends enjoy each other's refusal to put pressure on one another. When their schedules are free and they can come together in a spirit of harmony, it's great. They enjoy art, music, and spiritual pursuits. These two also have a profound love of the sea that will send them on many waterfront trips together. Of course, neither can depend on the other to deliver hard truths. Pisces are terrified of confrontation and would rather let sleeping dogs lie.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="ariesv1" && output2=="taurusv2") || (output1=="taurusv1" && output2=="ariesv2"))
+            {
+                ans = "Aries likes to look before they leap. Taurus prefers weighing their options. This dynamic can result in power struggles or it can be mutually beneficial. Aries can help Taurus become more strategically spontaneous, springing into action at the opportune moment. Taurus will assist Aries in getting better value from their work, relationships, and creative efforts. Occasionally, it will be best to leave each other alone. Trying to change one another will just undermine the value of this friendship. Viva la difference!";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="ariesv1" && output2=="librav2") || (output1=="librav1" && output2=="ariesv2"))
+            {
+                ans = "Independent Aries and collaborative Libra form a funny sort of friendship. Aries tries convincing Libra to take chances, shake off criticism, and be more direct. Libra constantly tells Aries to slow down, smell the flowers, and be more appreciative. It's an odd couple type of relationship that can work extremely well. Aries can learn the fine art of diplomacy from Libra, while Libra may become more assertive thanks to Aries. At times, they'll go their separate ways. Aries will head for the sports arena, while Libra will visit a museum. They need their own friends, not just one exclusive clique.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="ariesv1" && output2=="leov2") || (output1=="leov1" && output2=="ariesv2"))
+            {
+                ans = "Bold Aries and fun-loving Leo generate lots of excitement together! That's because both these friends are Fire Signs. Aries is the more outgoing of the two and may prefer seeking adventure while Leo luxuriates in comfort, waiting for a full report. These friends are also extremely active and may enjoy playing sports, thus bringing out each other's competitive side. Neither sign is a particularly gracious loser, so some heated arguments can erupt on the field or court. For the most part, however, each friend will bask in the other's glow.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="ariesv1" && output2=="sagittariusv2") || (output1=="sagittariusv1" && output2=="ariesv2"))
+            {
+                ans = "Dynamic Aries and adventurous Sagittarius feel an instant affinity. Both these Fire Signs like to keep moving, partying long into the night. Aries is more interested in what is hot and new, while Sagittarius has a reverence for time-honored traditions. These different tastes can actually bolster their friendship. Aries enjoys Sagittarius's ability to make any lesson fun, while Sagittarius is amused by Aries's boundless enthusiasm. Together, these two can paint the town red. A shared love of sports could prompt meetings at the gym, playing field, or other athletic arena.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="ariesv1" && output2=="cancerv2") || (output1=="cancerv1" && output2=="ariesv2"))
+            {
+                ans = "When these two Cardinal signs get together, amazing things can happen. Both Aries and Cancer are wonderful leaders. Aries is willing to take creative risks to succeed, while Cancer is able to tap into public sentiment. As a result, these friends may spend much of their time developing ideas for businesses, fundraisers and parties. At times, Aries's direct approach will send shy Cancer scuttling for cover. At others, Cancer's guilt trips will dampen Aries's enthusiasm. For the most part, though, these friends appreciate and celebrate each other's strengths.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="ariesv1" && output2=="scorpiov2") || (output1=="scorpiov1" && output2=="ariesv2"))
+            {
+                ans = "Daring Aries and passionate Scorpio form an explosive friendship. These two love getting into trouble together. Going to extremes is their idea of fun. Occasionally, the authorities might have to be called! Fortunately, Scorpio is an expert at getting out of messes. When they can't slip through the net, Aries usually can help them break free with a lot of fast talking. When they're getting along, these two can move mountains. A tendency to make mountains out of molehills will cause some heated fights, however.";
+               document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="ariesv1" && output2=="aquariusv2") || (output1=="aquariusv1" && output2=="ariesv2"))
+            {
+                ans = "Pioneering Aries and unique Aquarius have lots in common. Both have a deep appreciation for unorthodox ideas and new methods. These trailblazers make fast friends. Aries is a lot more excitable than steadfast Aquarius. Aquarius is much more stubborn than active Aries. At times, these two will argue about money, romantic relationships, and work. So long as they don't try to control each other, these spats will be quick and painless. Neither should attempt strong-arm tactics. Both signs cherish their independence and resent being told what to do.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="ariesv1" && output2=="geminiv2") || (output1=="geminiv1" && output2=="ariesv2"))
+            {
+                ans = "This is an incredibly dynamic friendship that seems to run on rocket fuel. Aries loves putting Gemini's brilliant ideas into practice. Gemini has fun egging Aries on to glory. Together, great things can be accomplished. These two friends make wonderful creative collaborators. The only downside to this alliance is a tendency toward heedlessness. Aries has no fear of danger and Gemini is always eager to see what's around the corner. This can cause some unfortunate accidents. The best gifts these friends can give each other is safety equipment.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="ariesv1" && output2=="virgov2") || (output1=="virgov1" && output2=="ariesv2"))
+            {
+                ans = "Heroic Aries and helpful Virgo are both service-oriented people. They may strike up a friendship while doing volunteer work or performing some selfless task. Although Aries doesn't have a filter and says whatever pops into his or her mind, Virgo is extremely conscientious and carefully censors their words. Aries thinks Virgo is too sensitive, while Virgo feels Aries is bombastic. Fortunately, the Ram appreciates it when the Virgin fixes their public relations disasters, while Virgo is grateful when Aries pushes them to take risks. Each brings something valuable to the other's table.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="ariesv1" && output2=="capricornv2") || (output1=="capricornv1" && output2=="ariesv2"))
+            {
+                ans = "Youthful Aries and seasoned Capricorn form an odd friendship. While Aries is always looking forward, Capricorn prefers to look back. If each puts forth some effort, they can meet in the present. Both these signs are remarkable leaders and will enjoy building things of lasting value. Aries is great at knocking on doors and launching sales initiatives. Capricorn is proficient at creating long-term financial security. Together, these friends can reach great heights. The key is for these two to always be working on a challenging project.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="ariesv1" && output2=="piscesv2") || (output1=="piscesv1" && output2=="ariesv2"))
+            {
+                ans = "Forthright Aries and reserved Pisces form an unlikely friendship. Although the Ram is bold and outgoing and the Fish is shy and reclusive, they do have some things in common. Both are highly sensitive to criticism. Aries tends to lash out when hurt, while Pisces usually turns silent. Neither is a stranger to pain. By bolstering each other's egos, these two can be a strong support system. Aries encourages Pisces to develop their creative talent, while Pisces assures Aries their innovative instincts are right on target.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="taurusv1" && output2=="librav2") || (output1=="librav1" && output2=="taurusv2"))
+            {
+                ans ="Although Taurus is an Earth Sign and Libra is an Air Sign, both are ruled by Venus. This means that beauty, luxury, and harmony will be the foundation of their friendship. Taurus is more highly attuned to physical representations of beauty, like colorful jewels, delicious food, and rich textures. Libra prefers ethereal types of art, like writing, music, and poetry. They love talking about their favorite artists. Taurus despairs of Libra's spendthrift ways and Libra thinks Taurus is overly stubborn, but they'd never dream of levying insults at each other.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="taurusv1" && output2=="leov2") || (output1=="leov1" && output2=="taurusv2"))
+            {
+                ans ="Taurus and Leo have more in common than meets the eye. Both love luxury. Each is extremely loyal. The two of them are incredibly stubborn. When they become friends, it's usually because they appreciate each other's taste. These two can often be found shopping, eating, and making or appreciating art together. Taurus hates being ordered around, which can cause problems when Leo issues royal commands. Leo dislikes Taurus's frugality. Fortunately, they're both very friendly. Most days, they prefer having fun to fighting.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="taurusv1" && output2=="sagittariusv2") || (output1=="sagittariusv1" && output2=="taurusv2"))
+            {
+                ans ="Stable Taurus can have a hard time connecting with adventuresome Sagittarius. The Bull loves peace and quiet, while the Archer craves excitement. Finding common ground is difficult, but it can be done. Both of these signs are straightforward. Therefore, they appreciate each other's honesty. When Taurus wants to know if they are being cheap or stubborn, Sagittarius will tell them. If Sagittarius is wondering whether they're behaving irresponsibly, Taurus will say so. This is a friendship grounded in reality checks.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="taurusv1" && output2=="cancerv2") || (output1=="cancerv1" && output2=="taurusv2"))
+            {
+                ans ="Taurus and Cancer often feel an immediate kinship. Both are security-conscious. They take pleasure in steady jobs, loving families, and comfortable homes. They're both very creative, too, and enjoy collaborating on everything from meals to gardens to handicrafts. Sometimes Taurus seems too obsessed with money for Cancer's taste, while Cancer appears overly sensitive to Taurus. For the most part, each is able to tolerate the other's weaknesses. Instead of trying to change one another, both signs choose to celebrate their friend's strong points. That's the secret of this strong friendship.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="taurusv1" && output2=="scorpiov2") || (output1=="scorpiov1" && output2=="taurusv2"))
+            {
+                ans ="Taurus and Scorpio usually eye each other warily before forming a friendship. Straight-shooting Taurus is suspicious of mysterious Scorpio, while passionate Scorpio can't fathom Taurus's calm demeanor. If the two of these signs spend enough time together, they can become friends. Taurus will teach Scorpio to laugh at life's absurdity. Scorpio will help Taurus obey its sensual desires. When these two fight, it is epic. Taurus is stubborn and Scorpio never forgets a slight. They find each other so fascinating, though, that it is hard for them to stay apart.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="taurusv1" && output2=="aquariusv2") || (output1=="aquariusv1" && output2=="taurusv2"))
+            {
+                ans ="Taurus and Aquarius don't have much in common, but they do have a shared love of security. Each sign respects the other's ability to see projects through to the end and stand by their loved ones. Although Taurus loves creature comforts and Aquarius hates being tied down by possessions, they do like to get good value for their money. Neither buys into the throwaway culture of modern life. Taurus will roll their eyes at Aquarius's offbeat tastes and Aquarius will call Taurus narrow-minded, but they're too laid-back to fight.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="taurusv1" && output2=="geminiv2") || (output1=="geminiv1" && output2=="taurusv2"))
+            {
+                ans ="Practical Taurus and whimsical Gemini have different approaches to life. Taurus doesn't like to take risks, while Gemini loves exploring new horizons. The Bull craves security, while the Twins yearn for variety. When these two signs do form a friendship, it's usually on the basis of a mutual interest. Both Taurus and Gemini place a strong emphasis on hobbies. There's a good chance they could connect in a cooking, foreign language, or art class or workshop. Taurus appreciates Gemini's brilliant insights, while Gemini admires Taurus' great taste.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="taurusv1" && output2=="virgov2") || (output1=="virgov1" && output2=="taurusv2"))
+            {
+                ans ="Taurus and Virgo form a strong friendship that can stand the test of time. While it's true that Taurus is slow to admit mistakes and Virgo is quick to point out errors, these two rarely argue. That's because they both value stability. Taurus knows how to spot good values and help Virgo make the most of their money. Virgo knows how to read the fine print and can assist Taurus in negotiating better deals. Together, they make great allies. A shared love of nature cements their bond.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="taurusv1" && output2=="capricornv2") || (output1=="capricornv1" && output2=="taurusv2"))
+            {
+                ans ="Taurus and Capricorn make fast friends, reveling in each other's dependability. Taurus can count on Capricorn to show up on time to every meeting. Capricorn knows Taurus will pay back a loan or return borrowed items. Best of all, both these signs share a profound appreciation for the great outdoors. Hanging out in forests, gardens, and parks is lots of fun for these nature lovers. Each delights in the other's sense of humor. When times get tough, they make each other laugh. These two have got each other's backs.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="taurusv1" && output2=="piscesv2") || (output1=="piscesv1" && output2=="taurusv2"))
+            {
+                ans ="Factual Taurus may not seem to have much in common with fantastic Pisces at first glance. After scratching each other's surfaces, though, they'll find a great deal in common. Both love beauty, art, and harmony. Each is laid-back and agreeable. Taurus delights in making Pisces laugh, while Pisces enjoys getting Taurus to loosen up. The Bull won't appreciate Pisces's forgetful ways, while the Fish will shake their head at Taurus's material concerns. Fortunately, both signs are very tolerant and will refrain from scolding each other.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="librav1" && output2=="leov2") || (output1=="leov1" && output2=="librav2"))
+            {
+                ans ="Leo and Libra make fabulous friends. Both are lovers of life and fuel each other's positive energy. Leo is enchanted by Libra's wit and sophistication, while Libra adores the Lion's warmth and generosity. Forceful Leo laughs at Libra's indecision, while collaborative Libra mocks the Lion's selfishness. Fortunately, each finds the other's weaknesses relatively minor. Both enjoy being entertained and will often accompany each other to movies, concerts, and plays. They're also enthusiastic game players and may enter trivia contests, poker tournaments, or sporting competitions.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="librav1" && output2=="sagittariusv2") || (output1=="sagittariusv1" && output2=="librav2"))
+            {
+                ans ="The friendship between Libra and Sagittarius is a strong one. Libra finds the Archer's depth and breadth of knowledge stimulating. Sagittarius admires Libra's ability to argue all sides of a given issue. Both are very smart and enjoy discussing everything from art to politics to religion. Of course, Libra isn't a big fan of the Archer's coarse humor, while Sagittarius thinks Libra is too fussy. But these differences will be a source of lighthearted teasing between them. Secretly, neither wants to change the other; they're perfectly happy as they are.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="librav1" && output2=="cancerv2") || (output1=="cancerv1" && output2=="librav2"))
+            {
+                ans ="Cancer and Libra are an odd couple. The Crab prefers dealing in the realm of emotion, while the sign of The Scales occupies the land of logic. Despite these differences, both signs are excellent leaders. They know how to bring people together in a spirit of harmony. Cancer admires Libra's fair treatment of others, while Libra appreciates the Crab's humorous approach to problems. Together, they'll have fun organizing parties, fundraisers, and business ventures. These two also love music and can commune over their favorite singers, performers, and bands.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="librav1" && output2=="scorpiov2") || (output1=="scorpiov1" && output2=="librav2"))
+            {
+                ans ="Libra and Scorpio make an uneasy alliance. Librans are gracious, fair-minded, and logical. Scorpions are intense, passionate, and emotional. When they become friends, it's because they want to help each other. Libra can show Scorpio how to approach problems logically. Scorpio will instruct Libra on summoning their resolve. Together, they can avoid pitfalls they'd otherwise suffer. Of course, Libra is uncomfortable with Scorpio's dark moods, while Scorpio detests Libra's tendency to break promises. If they can handle the bitter with the sweet, these friends can survive.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="librav1" && output2=="aquariusv2") || (output1=="aquariusv1" && output2=="librav2"))
+            {
+                ans ="Libra and Aquarius get along swimmingly, especially if Aquarius lets Libra take the lead. Although the Water Bearer is the visionary of the two, Libra is a natural executive. When allowed to set the pace of their friendship, Libra can bring great things to Aquarius's life. Finding commercial and social uses for Aquarius's brilliant ideas will give Libra a thrill. Meanwhile, Aquarius will show Libra the difference between glitter and gold. Occasionally, Libra will complain about the Water Bearer's stubborn ways, while Aquarius will disapprove of Libra's tendency to cling. No biggie.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="librav1" && output2=="geminiv2") || (output1=="geminiv1" && output2=="librav2"))
+            {
+                ans ="Gemini and Libra are boon companions that adore one another. As soon as these two get together, they are laughing and exchanging ideas. They love making plans together, but rarely stick to the planned out program. That's because both these signs go where the wind takes them, easily abandoning a good prospect for a great one. There are some complications with this friendship. The Twins lack Libra's diplomatic skills, while Libra is a bit too dependent for Gemini's taste. Fortunately, neither of them holds a grudge.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="librav1" && output2=="virgov2") || (output1=="virgov1" && output2=="librav2"))
+            {
+                ans ="Gemini and Libra are boon companions that adore one another. As soon as these two get together, they are laughing and exchanging ideas. They love making plans together, but rarely stick to the planned out program. That's because both these signs go where the wind takes them, easily abandoning a good prospect for a great one. There are some complications with this friendship. The Twins lack Libra's diplomatic skills, while Libra is a bit too dependent for Gemini's taste. Fortunately, neither of them holds a grudge.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="librav1" && output2=="capricornv2") || (output1=="capricornv1" && output2=="librav2"))
+            {
+                ans ="Affable Libra finds stoic Capricorn confusing. Libra is outgoing and friendly. When met with the Goat's stony silences, Libra can't help but feel snubbed. After spending some time in each other's orbit, Libra will realize Capricorn isn't unkind, just discerning. At that point, tasteful Libra will feel better about befriending Capricorn. Both have high standards and will enjoy finding the best stores, restaurants, and cultural exhibits together. Lighthearted Libra doesn't appreciate Capricorn's pessimism, while the steadfast Goat will dislike Libra's fickle behavior - but this friendship can last.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="librav1" && output2=="piscesv2") || (output1=="piscesv1" && output2=="librav2"))
+            {
+                ans ="Libra and Pisces have radically different guides to life. Libra is led by their intellect, while Pisces operates on intuition. If these two signs turn to each other for help, they will form a formidable friendship. Libra will discourage Pisces from falling victim to irrational fears, insisting the Fish get the facts before making wild assumptions. Pisces will help Libra see that there is more to life than meets the eye. Both have a deep appreciation for art and a dislike of confrontation. This is a pleasant alliance.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="leov1" && output2=="sagittariusv2") || (output1=="sagittariusv1" && output2=="leov2"))
+            {
+                ans ="Leo and Sagittarius love being together. Playful Leo delights in the Archer's irreverent humor. Energetic Sagittarius appreciates the Lion's tremendous energy. They'll have fun traveling, playing sports, and causing a commotion. Leo privately thinks Sagittarius is a bit of a flake, while the Archer bluntly asserts that the Lion is an egotist. Although these differences will cause some loud arguments, neither sign takes these spats too seriously. These friends understand that life is much nicer when they're together than when they're apart.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="leov1" && output2=="cancerv2") || (output1=="cancerv1" && output2=="leov2"))
+            {
+                ans ="At first, Cancer and Leo don't know what to make of each other. Modest Cancer is shocked by proud Leo's bragging. Fun-loving Leo can't understand Cancer's tearful outbursts. Instead of writing each other off, these signs should take a second look at each other. The Moon Child can greatly benefit from Leo's playful attitude. The Lion can become more sensitive under Cancer's tender influence. They're both extremely loyal and will stick together through thick and thin. This friendship can be a rewarding balancing act of energies.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="leov1" && output2=="scorpiov2") || (output1=="scorpiov1" && output2=="leov2"))
+            {
+                ans ="Both signs are emotional creatures that demand lots of attention. The difference is that Leo loves the spotlight, while Scorpio prefers operating in the shadows. When the Lion doesn't get the accolades they expect, they'll emit a mighty roar. If Scorpio isn't getting respect, they'll remain silent and formulate plans for revenge. When these two put an end to their power struggles, they can bring wonderful things to one another. Leo can help Scorpio look at the bright side, while Scorpio will assist the Lion in developing their creative talent.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="leov1" && output2=="aquariusv2") || (output1=="aquariusv1" && output2=="leov2"))
+            {
+                ans ="The differences between Leo and Aquarius are epic. Leo demands a starring role, while Aquarius prefers being part of a supporting cast. The Lion loves luxury, while the Water Bearer is indifferent to creature comforts. Leo loves physical pleasure, while Aquarius occupies the realm of ideas. Still, these two can be great friends. The Lion will help Aquarius get in touch with their emotions, while the Water Bearer will make Leo aware of their place in the social network. They also appreciate each other's ability to create security and stability.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="leov1" && output2=="geminiv2") || (output1=="geminiv1" && output2=="leov2"))
+            {
+                ans ="Effusive and affectionate, Gemini and Leo form a fast friendship. They form a mutual admiration society that is positively addictive. Gemini is quick to appreciate Leo's style, creative talent, and warmth. Leo loves laughing at Gemini's witty remarks. These two are very adventurous and enjoy getting into trouble together. Fortunately, Gemini is an expert at talking their way out of punishments. This is the one instance when Leo should follow their friend's lead. At all other times, Gemini should defer to Leo's sizable ego. This is a fun-loving pair.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="leov1" && output2=="virgov2") || (output1=="virgov1" && output2=="leov2"))
+            {
+                ans ="Leo and Virgo are funny friends. Leo is grandiose, while Virgo is humble. The Virgin is critical, while the Lion is effusive. Despite these differences, Leo and Virgo can greatly benefit from each other's company. Leo can reconcile Virgo to their sensual side. Virgo can warn trusting Leo of opportunists in their midst. Both want to maintain optimal health, and may share wellness tips. Of course, Leo will accuse Virgo of being uptight, while the Virgin will charge the Lion with being selfish. They'll never change each other, though.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="leov1" && output2=="capricornv2") || (output1=="capricornv1" && output2=="leov2"))
+            {
+                ans ="Although fun-loving Leo may not feel an immediate connection with reserved Capricorn, these two can form a good friendship. Both these signs place a tremendous importance on dignity. Neither would dream of making fun of each other's weak points. Both possess a marvelous sense of humor. The Lion's wit is silly, while the Goat's humor is dry, but they do make each other laugh. Of course, Leo will find Capricorn's obsession with fiscal responsibility tiresome, while the Goat will think the Lion's ego ridiculous. Still, they are loyal friends.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="leov1" && output2=="piscesv2") || (output1=="piscesv1" && output2=="leov2"))
+            {
+                ans ="Leo and Pisces form an unusual alliance. Outgoing Leo is mystified by the Fish's reclusive ways. Introverted Pisces will tire of the Lion's self-centered stories. However, all is not lost on the friendship front. Both signs have a deep appreciation for fantasy and glamour. They'll find they share lots of the same taste in movies. They'll admire each other's fashion sense. Above all, they'll connect over their mutual desire to transcend mundane reality. If Leo can put up with Pisces's tearful outbursts, Pisces will tolerate the Lion's gargantuan ego.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="sagittariusv1" && output2=="cancerv2") || (output1=="cancerv1" && output2=="sagittariusv2"))
+            {
+                ans ="Cancer and Sagittarius are a strange duo. The sensitive Crab can burst into tears at the drop of a hat, while the optimistic Archer refuses to let anyone break their stride. Cancer is great at creating a comfortable, enriching home life, while Sagittarius prefers living out of a suitcase. Although they are very different, these two signs do admire each other. Cancer respects Sagittarius' moral code, while the Archer appreciates the Moon Child's emotional honesty. They can rely on each other to be honest, fair, and ethical.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="sagittariusv1" && output2=="scorpiov2") || (output1=="scorpiov1" && output2=="sagittariusv2"))
+            {
+                ans ="Scorpio and Sagittarius are very different people who have lots to bring to each other. Driven Scorpio can show the Archer how to follow through on their dreams. The optimistic Archer will assist Scorpio in dispelling doubt. Naturally, resourceful Scorpio will disapprove of Sagittarius's irreverent attitude toward money. Meanwhile, the open Archer is suspicious of the Scorpion's secrecy. Still, if they can accept each other's weaknesses, these friends will benefit from their respective strengths. Fortunately, they both have the ability to exert mind over matter, allowing them to overcome minor irritations.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="sagittariusv1" && output2=="aquariusv2") || (output1=="aquariusv1" && output2=="sagittariusv2"))
+            {
+                ans ="These friends feed each other's energy. Optimistic Sagittarius loves Aquarius's <i>anything is possible</i> attitude toward life. The humanitarian Water Bearer respects Sagittarian's love of justice. They're off-beat characters who enjoy causing a commotion. Of course, they can rub each other the wrong way from time to time. The Archer doesn't like it when Aquarius gets self-righteous. The dedicated Water Bearer can't stand it when Sagittarius is unreliable. Fortunately, they know how to quarrel without inflicting serious damage. These convivial friends will have a lifetime of fun together.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="sagittariusv1" && output2=="geminiv2") || (output1=="geminiv1" && output2=="sagittariusv2"))
+            {
+                ans ="Gemini likes fiction while Sagittarius prefers biographies. The Twins want to hear all the gory details while the Archer is only interested in the big picture. Gemini can see many sides of a given issue, while Sagittarius insists there is only one truth. Although these two signs come at life from radically different directions, they can still form a solid friendship. They both love to travel. A shared love of the written word is another bond. In addition, these two are great students. Their friendship is a miniature classroom.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="sagittariusv1" && output2=="virgov2") || (output1=="virgov1" && output2=="sagittariusv2"))
+            {
+                ans ="Virgo and Sagittarius are often at odds with each other. Precise Virgo is bewildered by the Archer's sweeping vision. Adventurous Sagittarius feels deflated by the Virgin's cautious approach. Before these two write each other off, they should give this friendship a try. Both are incredibly intelligent. They may be delighted to discover they love many of the same books. These two are also interested in current events and will enjoy discussing politics, culture, and social movements. Last but not least, they share a love of travel and exploration.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="sagittariusv1" && output2=="capricornv2") || (output1=="capricornv1" && output2=="sagittariusv2"))
+            {
+                ans ="Spontaneous Sagittarius dislikes slowing down for cautious Capricorn. Still, the Archer would be wise to pause and give the Goat a second look. Capricorn has the capacity to turn dreams into realities. Visionary Sagittarius loves building castles in the air, but sometimes has difficulty reaching their goals. With the help of the practical Goat, the Archer could reach heights they never dreamed possible. Similarly, Capricorn will enjoy tremendous benefits from this friendship. The optimistic Archer can chase away the Goat's apprehensions, paving the way for a happier, healthier outlook.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="sagittariusv1" && output2=="piscesv2") || (output1=="piscesv1" && output2=="sagittariusv2"))
+            {
+                ans ="Irreverent Sagittarius enjoys the company of whimsical Pisces, albeit in small doses. Both these signs are spontaneous individuals who love acting on impulse. The Archer won't enjoy tending to the Fish's mood swings, while Pisces doesn't appreciate Sagittarius's brutal honesty. Still, these versatile creatures can have lots of fun together. If Sagittarius can adopt a milder tone, Pisces will be less maudlin. They're both quite spiritual and might attend religious services together. Collaborating on humanitarian projects can also be enjoyable for these two.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="cancerv1" && output2=="scorpiov2") || (output1=="scorpiov1" && output2=="cancerv2"))
+            {
+                ans ="Cancer and Scorpio just click. Sensitive Cancer understands Scorpio's driving passion. Perceptive Scorpio intuits the Moon Child's desire for a happy home life. But there are some sources of strain in this friendship. The Crab doesn't approve of Scorpio's vengeful behavior. The Scorpion can't stand when Cancer scuttles away to cry. Despite these differences, each will protect the other's interests. Cancer secretly enjoys giving painful pinches to Scorpio's enemies, while Scorpio openly loves avenging the Moon Child's hurt feelings. It's a strong and occasionally intimidating alliance.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="cancerv1" && output2=="aquariusv2") || (output1=="aquariusv1" && output2=="cancerv2"))
+            {
+                ans ="Cancer and Aquarius are a pair of odd ducks. The Moon Child has an offbeat sense of humor, while the Water Bearer has an unorthodox view of life. They might view each other as weirdoes, which is often the launching pad to their friendship. The Crab will help the Water Bearer let down their defenses, while Aquarius will help the Moon Child be less self-conscious. At times, Cancer will get grouchy with Aquarius' aloof attitude, while Aquarius will despair over the Moon Child's obsession with money. Mostly, they'll shrug off these differences.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="cancerv1" && output2=="geminiv2") || (output1=="geminiv1" && output2=="cancerv2"))
+            {
+                ans ="This friendship doesn't come naturally, but it can be very rewarding. Gemini is highly intellectual, while Cancer is extremely emotional. The two friends have radically different reactions to life, which is a good thing. Gemini can help Cancer realize that while feelings are important, they can be controlled. Cancer will show Gemini the value in forming lasting, heartfelt relationships. The Twins don't understand the Moon Child's obsession with economic stability. Conversely, Cancer doesn't get why Gemini can't sit still for two minutes. Mostly, they laugh at each other's quirks.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="cancerv1" && output2=="virgov2") || (output1=="virgov1" && output2=="cancerv2"))
+            {
+                ans ="These two signs have a healthy respect for one another. Cancer has solid values, preferring to cultivate relationships with quality people. Virgo has pure principles, refusing to be swayed by offers of money and status. When the Moon Child and Virgin come together, they feel supported. Of course, Cancer can't abide Virgo's nitpicking. Conversely, Virgo will barely tolerate Cancer's emotional outbursts. Eventually, the Moon Child will teach Virgo the value of unconditional love, while Virgo will teach Cancer not to cry over trivial matters.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="cancerv1" && output2=="capricornv2") || (output1=="capricornv1" && output2=="cancerv2"))
+            {
+                ans ="Cancer and Capricorn are complete opposites, which is the secret to their friendship. The Crab has tremendous emotional intelligence, knowing what people need to thrive. The Goat is enormously practical, understanding what needs to be done to succeed. Sometimes Cancer will accuse Capricorn of being cold-hearted. Other times Capricorn will claim Cancer is hypersensitive. For the most part, they'll be able to overlook these shortcomings for the sake of creating something of lasting value. These two are builders and balance each other beautifully.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="cancerv1" && output2=="piscesv2") || (output1=="piscesv1" && output2=="cancerv2"))
+            {
+                ans ="Cancer and Pisces are great pals. Loving Cancer enjoys lavishing insecure Pisces with affection. The expressive Fish adores drawing the Crab out of its shell. There will be times when Cancer gets exasperated with Pisces's irresponsible behavior with money. Pisces, on the other hand, will roll their eyes at Cancer's career obsessions. For the most part, they'll overlook each other's weaknesses. They're both very artistic and may enjoy collaborating on creative projects together. These friends are a terrific support system for one another.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="scorpiov1" && output2=="aqauriusv2") || (output1=="aquariusv1" && output2=="scorpiov2"))
+            {
+                ans ="Scorpio and Aquarius first come together thinking they will change one another. After they get to know each other, these signs realize that neither will budge. Scorpio's willpower is a force of nature, while Aquarius has convictions that are deeply rooted. Fortunately, this inability to be influenced is a source of admiration. Scorpio respects how the Water Bearer marches to the beat of their own drummer. Aquarius enjoys how the Scorpion keeps them guessing. Together, they form an unusual friendship that makes onlookers scratch their heads with confusion.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="scorpiov1" && output2=="geminiv2") || (output1=="geminiv1" && output2=="scorpiov2"))
+            {
+                ans ="Gemini and Scorpio each have their own ideas about how life should be conducted. Neither can be easily converted. That's why it can be difficult for these signs to form a friendship. When they do, it's usually because they appreciate each other's incisive thinking. Gemini is extremely well informed and can support their arguments with compelling facts and figures. Scorpio isn't afraid to shatter taboos and challenge limiting attitudes. Independent Gemini finds Scorpio's jealousy distasteful, while passionate Scorpio can't comprehend Gemini's composure. They do appreciate each other's keen intellects.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="scorpiov1" && output2=="virgov2") || (output1=="virgov1" && output2=="scorpiov2"))
+            {
+                ans ="These two signs feel an instant bond. Virgo appreciates Scorpio's ability to intuit their emotions, while the Scorpion admires Virgo's keen intellect. When they join forces, exciting changes occur. Virgo is able to pinpoint the source of Scorpio's pleasure and pain. The Scorpion would be wise to take the Virgin's advice on cultivating contentment. Conversely, Scorpio is able to ease Virgo's anxieties, providing welcome reassurance during times of trial. These friends bring out the best each other, thanks to Virgo's brilliant mind and Scorpio's emotional intelligence.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="scorpiov1" && output2=="capricornv2") || (output1=="capricornv1" && output2=="scorpiov2"))
+            {
+                ans ="Scorpio and Capricorn have a healthy respect for each other. Perceptive Scorpio has a knack for spotting hidden opportunities. Ambitious Capricorn has a great work ethic. When they combine forces, incredible heights can be reached. At times, the Scorpion will be shocked by Capricorn's ability to be ruthless for the sake of advancement. At others, the Goat will be distressed by Scorpio's capacity to inflict pain. If they treat each other with respect, these friends will avoid trouble. Both have tremendous staying power, so this could be a lifelong alliance.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="scorpiov1" && output2=="piscesv2") || (output1=="piscesv1" && output2=="scorpiov2"))
+            {
+                ans ="These two Water Signs are terrific friends. Protective Scorpio loves caring for vulnerable Pisces. The whimsical Fish enjoys lifting Scorpio's spirits. They're highly creative people who love collaborating on writing, music, and design projects. When they're not working, they have fun trading books, watching movies and going to concerts together. Scorpio sometimes complains about the Fish's lazy habits, while Pisces will turn its tail at Scorpio's nasty streak. Fortunately, they are both very sensitive and will quickly apologize for hurting each other. This is a friendship that can afford tremendous happiness.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="aquariusv1" && output2=="geminiv2") || (output1=="geminiv1" && output2=="aquariusv2"))
+            {
+                ans ="These two signs have an instant affinity for each other. Curious Gemini loves hearing about Aquarius's latest theories. Aloof Aquarius admires Gemini's ability to make friends with people from all walks of life. These two love attending parties together, separating once they arrive and then coming together to exchange notes afterward. At times, the Twins will groan about the Water Bearer's stubborn attitude. At others, Aquarius will sigh impatiently over Gemini's inability to follow through with promises. In the end, they'll set these criticisms aside and enjoy each other's company.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="aquariusv1" && output2=="virgov2") || (output1=="virgov1" && output2=="aquariusv2"))
+            {
+                ans ="Although Virgo is extremely practical while the Water Bearer is an unapologetic visionary, they can find common ground. Both appreciate cutting-edge technology that's aimed at making the world a better place. They'll learn to consult each other whenever they need to buy a new gadget, car, or computer. Health is also something of a preoccupation for these signs. The Virgin will enjoy perfecting nutritious recipes for Aquarius, while the Water Bearer will have a list of great holistic therapies for Virgo to try. They form a great support system.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="aquariusv1" && output2=="capricornv2") || (output1=="capricornv1" && output2=="aquariusv2"))
+            {
+                ans ="Capricorn and Aquarius seem to be a study in contrasts. Capricorn has a great respect for tradition, while Aquarius is determined to break new ground. The Goat is firmly grounded in reality, while the Water Bearer prefers the world of imagination. Still, they do have similarities. Both are determined to build things of lasting value. Capricorn can show Aquarius how to make resources stretch to the breaking point, while the Water Bearer will demonstrate the value of an extensive social network. This is a blend of energies that is challenging but rewarding.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="aquariusv1" && output2=="piscesv2") || (output1=="piscesv1" && output2=="aquariusv2"))
+            {
+                ans ="Aquarius and Pisces form a rewarding, if uneasy, friendship. The intellectual Water Bearer is indifferent to sentimentality, whereas emotional Pisces is immune to logic. Aquarius will get frustrated by the Fish's refusal to face facts, while Pisces will dislike the Water Bearer's inability to recognize social cues. Still, these two have quite a bit in common. Neither is particularly materialistic, so they can have a great time whether they're flush with money or totally broke. They also share a powerful desire for social justice and enjoy working together on humanitarian efforts.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="geminiv1" && output2=="virgov2") || (output1=="virgov1" && output2=="geminiv2"))
+            {
+                ans ="Although Gemini is an Air Sign and Virgo belongs to the Earth, these friends do have lots in common. Both signs are ruled by the planet Mercury, conferring high intelligence. These two love sharing book, film, and music recommendations. They also collaborate very well. Gemini prefers to generate the ideas, while Virgo is great at implementing them. Gemini bristles at the Virgin's quest for perfection, while Virgo is exasperated by the Twins' refusal to take work seriously. Still, each admires the other's special brand of wisdom.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="geminiv1" && output2=="capricornv2") || (output1=="capricornv1" && output2=="geminiv2"))
+            {
+                ans ="The Twins exude youthful energy, while the Goat is an old soul. If these two can manage to let down their defenses, they can form a helpful friendship. Gemini can bring Capricorn up to date on the latest trends. Capricorn can give Gemini an appreciation for tradition. Although the Twins will never buy into the Goat's pessimistic outlook, while Capricorn will not care for Gemini's inability to handle money, they can have fun together. Each has a terrific sense of humor. Gemini's irreverence mixes well with Capricorn's sardonic wit.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="geminiv1" && output2=="piscesv2") || (output1=="piscesv1" && output2=="geminiv2"))
+            {
+                ans ="Gemini and Pisces are two totally different people who have lots to teach each other. Gemini is great at shaking off disappointment and finding fresh opportunities. Pisces is adept at forming meaningful relationships that last a lifetime. If the Twins can endure Pisces's emotional rollercoaster and the Fish can put up with Gemini's neuroses, these two can be good friends. Gemini is impressed with Pisces's creative talent, while Pisces thinks Gemini is as smart as a whip. They're both versatile and can make allowances for each other's shortcomings.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="virgov1" && output2=="capricornv2") || (output1=="capricornv1" && output2=="virgov2"))
+            {
+                ans ="Virgo and Capricorn form a strong friendship that can last a lifetime. These two Earth Signs have a natural affinity for safety and security. They also have a profound appreciation for creature comforts. The Virgin's talent for research can help Capricorn find great bargains on everything from business attire to mountain climbing equipment to antique furniture. The Goat's executive abilities can assist Virgo in landing a high-paying job in their desired industry. These nature-lovers may also enjoy hiking, biking, and bird watching together.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="virgov1" && output2=="piscesv2") || (output1=="piscesv1" && output2=="virgov2"))
+            {
+                ans ="Practical Virgo has difficulty relating to dreamy Pisces. These two signs are opposites in many ways, but this doesn't mean they can't be friends. Virgo has tremendous intellectual gifts but is sometimes shy about sharing them. Supportive Pisces will help find an audience for Virgo's scientific, social, and creative work. Naïve Pisces has difficulty spotting manipulators, which is where discerning Virgo can be a tremendous help. Both are service-oriented signs that may enjoy doing volunteer work, especially if it involves rescuing animals or other innocent creatures.";
+                document.getElementById('para').innerText =ans;
+            }
+            else if((output1=="capricornv1" && output2=="piscesv2") || (output1=="piscesv1" && output2=="capricornv2"))
+            {
+                ans ="These two signs make excellent friends. Sensible Capricorn helps impractical Pisces become more responsible. Whimsical Pisces encourages the predictable Goat to take a few risks. Capricorn is touched by the Fish's thoughtful gestures and can thrive from their tender loving care. Pisces is comforted by the Goat's strength and stability, knowing their friend will always help in emergencies. Of course, Capricorn will be impatient with Pisces' tendency to cry at sappy commercials, while Pisces will disapprove of the Goat's workaholic ways. These friends really do adore each other, though.";
+                document.getElementById('para').innerText =ans;
+            }
+
+        }
+   </script>
+
+<div class="m-4" style="background-color: #d4d4d4; border-radius: 15px; border: 5px solid black;"id="navi">
+    <nav class="navbar navbar-expand-sm " >
+        <div class="container-fluid">
+            
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a href="Home page.html" class="nav-link" style="color:black; font-family:IM Fell english ; font-size: 20px;">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color:black; font-family:IM Fell english; font-size: 20px;">Zodiac Signs</a>
+                        <div class="dropdown-menu" style="font-family: Amarante;background-color: #e4dccf;">
+                            <a href="Fire Zodiac signs.html" class="dropdown-item" target="_blank">Aries</a>
+                            <a href="Earth Zodiac signs.html" class="dropdown-item" target="_blank">Taurus</a>
+                            <a href="Air Zodiac signs.html" class="dropdown-item" target="_blank">Gemini</a>
+                            <a href="Air Zodiac signs.html" class="dropdown-item" target="_blank">Aquarius</a>
+                            <a href="Fire Zodiac signs.html" class="dropdown-item" target="_blank">Leo</a>
+                            <a href="Air Zodiac signs.html" class="dropdown-item" target="_blank">Libra</a>
+                            <a href="Fire Zodiac signs.html" class="dropdown-item" target="_blank">Sagittarius</a>
+                            <a href="Water Zodiac signs.html" class="dropdown-item" target="_blank">Scorpio</a>
+                            <a href="Water Zodiac signs.html" class="dropdown-item" target="_blank">Cancer</a>
+                            <a href="Earth Zodiac signs.html" class="dropdown-item" target="_blank">Capricorn</a>
+                            <a href="Water Zodiac signs.html" class="dropdown-item" target="_blank">Pisces</a>
+                            <a href="Earth Zodiac signs.html"class="dropdown-item" target="_blank">Virgo</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color:black; font-family:IM Fell english; font-size: 20px;">Elements</a>
+                        <div class="dropdown-menu" style="font-family: Amarante;background-color: #e4dccf;">
+                            <a href="Fire Element.html" class="dropdown-item" target="_blank">Fire</a>
+                            <a href="Water Element.html" class="dropdown-item" target="_blank">Water</a>
+                            <a href="Air Element.html" class="dropdown-item" target="_blank">Air</a>
+                            <a href="Earth Element.html" class="dropdown-item" target="_blank">Earth</a>
+                            
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color:black; font-family:IM Fell english; font-size: 20px;">Compatibility</a>
+                        <div class="dropdown-menu" style="font-family: Amarante;background-color: #e4dccf;">
+                            <a href="Color Compatibility.html" class="dropdown-item" target="_blank">Colour compatibility</a>
+                            <a href="Zodiac Compatibility.html" class="dropdown-item" target="_blank">Zodiac compatibility</a>
+                           </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color:black; font-family:IM Fell english; font-size: 20px;">Colours</a>
+                        <div class="dropdown-menu" style="font-family: Amarante; background-color: #e4dccf;">
+                            <a href="About the Colors.html" class="dropdown-item" target="_blank">About the colours</a>
+                            <a href="Color Compatibility.html" class="dropdown-item" target="_blank">Colour compatibility</a>
+                           </div>
+                    </li>
+                </ul>
+                
+            </div>
+            <p style="font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;font-size: 20px;margin-right: 10px;color:#22404A;display:none;" id="logo">Zodix</p>
+        </div>
+        
+    </nav>    
+    
+  </div>
+    </head>
+    <body style="background-color: #e4dccf; border: 20px solid #4C6A78">
+        <br>
+        <center><h1 style="color:#22404a; font-family:Chelsea Market "><b>Zodiac Signs Compatibility</b></h1></center>
+
+       <br>
+            
+    <div class="container" style="background-color: #b2bcbb; width: 1000px; height:300px; color: black; border: 5px solid #22404a; border-radius: 5px;">
+                    <div class="row">
+                        <div class="col">
+                            <br>
+                            
+                                <center><select id="id1" name="zodiacsigns" style="background-color: #e4dccf;  height: 80px; width: 300px; border: 7px solid black; font-size: 25px; border-radius: 10px; font-family: Georgia, 'Times New Roman', Times, serif;"> </center>
+                                    <option value="sample1">Choose:</option>
+                                    <option  id="aries1" value="ariesv1">Aries</option>
+                                    <option value="taurusv1" id="taurus1">Taurus</option>
+                                    <option value="librav1" id="libra1">Libra</option>
+                                    <option value="leov1" id="leo1">Leo</option>
+                                    <option value="sagittariusv1" id="sagittarius1">Sagittarius</option>
+                                    <option value="cancerv1" id="cancer1">Cancer</option>
+                                    <option value="scorpiov1" id="scorpio1">Scorpio</option>
+                                    <option value="aquariusv1" id="aquarius1">Aquarius</option>
+                                    <option value="geminiv1" id="gemini1">Gemini</option>
+                                    <option value="virgov1" id="virgo1">Virgo</option>
+                                    <option value="capricornv1" id="capricorn1">Capricorn</option>
+                                    <option value="piscesv1" id="pisces1">Pisces</option>
+                                    </select>
+                                
+                            </div>
+                            <div class="col">
+                                <br>
+                                <center><img src="vs.png" style="height: 100px; width:150px;"></center>
+
+                            </div>
+                            
+                            
+                        
+                        <div class="col">
+                            <br>
+                        
+                                <center><select id="id2" name="zodiacsigns" style="background-color: #e4dccf;  height: 80px; width: 300px; border: 7px solid black; font-size: 25px; border-radius: 10px; font-family: Georgia, 'Times New Roman', Times, serif;"></center>
+                                    <option value="sample2">Choose: </option>
+                                    <option  id="aries2" value="ariesv2">Aries</option>
+                                    <option value="taurusv2" id="taurus2">Taurus</option>
+                                    <option value="librav2" id="libra2">Libra</option>
+                                    <option value="leov2" id="leo2">Leo</option>
+                                    <option value="sagittariusv2" id="sagittarius2">Sagittarius</option>
+                                    <option value="cancerv2" id="cancer2">Cancer</option>
+                                    <option value="scorpiov2" id="scorpio2">Scorpio</option>
+                                    <option value="aquariusv2" id="aquarius2">Aquarius</option>
+                                    <option value="geminiv2" id="gemini2">Gemini</option>
+                                    <option value="virgov2" id="virgo2">Virgo</option>
+                                    <option value="capricornv2" id="capricorn2">Capricorn</option>
+                                    <option value="piscesv2" id="pisces2">Pisces</option>
+                                    </select>
+                            
+                        </div>
+
+                    </div>
+                    <center><button type="button" onclick="return myfunction()" style=" margin-top:90px; border: 5px solid black; background-color: #4C6A78; height: 45px; width: 200px; font-size: 20px; border-radius: 20px; color:#e4dccf ;" id="btnmain"><b>Click me</b></button></center>
+                </div>
+                <div>
+                    <br>
+                    <center><p id="para" style="margin-left: 20px; margin-right: 20px; font-family: IM Fell English; text-align: justify; font-size: 25px; "></p></center>
+                </div>
+                <br>
+                <div style="color:#22404A;text-align: center;font-weight: bold;position: fixed;bottom: 0;left:30">
+                    <p>
+                      Made By Soumyyaa Jain & Gargi Shukla
+                    </p>
+                  </div>
+
+    
+</body>
+</html>
